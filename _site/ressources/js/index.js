@@ -1,16 +1,4 @@
-/*
-var content_accueil = document.getElementById('content_accueil');
-var content_accueil_parallaxInstance = new Parallax(content_accueil,{
-    invertY: false,
-    relativeInput:true,
-    scalarY:100
-});
 
-var accueil_projets = document.getElementById('accueil_projets');
-var accueil_projets_parallaxInstance = new Parallax(accueil_projets,{
-
-});
-*/
 let var_translateY=35;
 let var_delay=80;
 anime({
