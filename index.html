@@ -1,0 +1,40 @@
+---
+layout: layout_basic
+title: Page d'accueil
+---
+<script src="./ressources/js/index.js"></script>
+<body>
+    <div id="content_accueil" >
+        <div class="">
+            <div class="block">
+                <h1 class="">
+                    Salut, moi c’est {{ site.data.information.prenom }} {{ site.data.information.name }} </br>
+                    {{ site.data.information.etude }}
+                </h1>
+            </div>
+    
+            <div class="block">
+                <h3>
+                    {{ site.data.information.complement }}
+                </br>
+                    {{ site.data.information.signification }}
+                </h3>
+    
+            </div>
+            <div>
+                <a href="/contact/" class="button">
+                    <button class="button-cv" role="button">Contact</button>
+                </a>
+            </div>
+        
+        </div>
+    </div>
+
+
+    <div id="accueil_projets">
+
+    </div>
+
+
+
+</body>

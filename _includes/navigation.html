@@ -1,0 +1,20 @@
+
+<nav>
+    
+
+        <img src="../../ressources/img/logo.png" />
+        
+
+
+        <div class="row nav">
+            {% for page in site.data.navigation.pages %}
+                
+                    <button onclick='window.location.href = "{{ page.url }}"' class="button-nav" role="button">{{page.title}}</button>
+                    
+            {% endfor %}
+
+        </div>
+
+
+</nav>
+

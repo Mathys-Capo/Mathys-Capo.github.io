@@ -1,0 +1,151 @@
+:root{
+  --background:black;
+  --blue: #5263FE;
+
+}
+#content_accueil{
+  max-width: 100%;
+}
+body{
+  background-color: var(--background);  
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 10%;
+}
+
+
+
+
+#content_accueil{
+  color: #FFFFFF;
+  font-size: 250%;
+  width: 55%;
+  display: flex;
+  height: 100vh;
+}
+.titre_accueil{
+  width: 20%;
+}
+
+.row{
+  display: contents;
+  
+}
+.block{
+  line-height: 1;
+}
+
+nav{    
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  
+}
+nav>a{
+  padding: 10px;
+  height: 30%;
+}
+.nav{
+  right: 0px;
+  display: flex;
+  align-items: center;
+  margin-left: 50%;
+  width: 120%;
+  gap: 30px;
+}
+
+
+#croissantLune{
+  height: 35px;
+}
+
+#accueil_projets{
+  height: 100vh;
+  background-color: aqua;
+  background-size: cover;
+}
+
+
+
+
+
+
+
+/* CSS */
+.button-cv {
+  background-color: var(--background);
+  align-items: center;
+  border: 1px solid #DFDFDF;
+  border-radius: 50px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: flex;
+  font-size: 18px;
+  justify-content: center;
+  line-height: 28px;
+  max-width: 300%;
+  padding: 2% 9%;
+  text-decoration: none;
+  transition: all .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  color: #FFFFFF;
+  font-size: 65%;
+}
+.button-nav {
+  background-color:var(--background);
+  align-items: center;
+  border: 1px solid #DFDFDF;
+  border-radius: 50px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 28px;
+  max-width: 300%;
+  padding: 14px 150px;
+  text-decoration: none;
+  transition: all .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  color: #FFFFFF;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.button-cv:active,.button-cv:hover,
+.button-nav:active,.button-nav:hover {
+  outline: 0;
+}
+
+.button-cv:hover {
+  background-color: #FFFFFF;
+  border-color: var(--blue);
+  color: var(--background);
+}
+.button-nav:hover {
+  background-color: #FFFFFF;
+  border-color: var(--blue);
+  color: var(--background);
+}
+
+
+.button_round{
+  border-radius:50%;
+  width:100px;
+  height:60px;
+  background: var(--blue);
+  border:none;
+  outline:none;
+  font: 18px Tahoma bold;
+  color: #ffffff;
+  margin:20px;
+  }

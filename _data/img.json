@@ -1,0 +1,92 @@
+{
+    "projets":[
+        {
+            "url":"../ressources/img/orthoapparat.png",
+            "titre":"Traducteur en orthographe d’Apparat",
+            "description":["L’orthographe d’apparat est un projet de complexification de l’orthographe française volontairement peu intelligible créé en 1977 par le collège de Pataphysique. Cette orthographe est une satire de la langue française qui est difficile de comparer à d’autre langues comme le Turc, Allemand, qui sont des langues qui s’écrivent comme ils se prononcent.","J’ai donc créé un algorithme qui permet la traduction , cependant j’émets une alerte par rapport à la phonétique."],
+            "texte_image":"exemples de traduction",
+            "position":false,
+            "competances":[
+                {"num":"1. AC 1","nom": "Choisir et implémenter les architectures adaptées"},
+                {"num":"1. AC 3","nom": "Intégrer des solutions dans un environnement de production"},
+                {"num":"5. AC 2","nom": "Formaliser les besoins du client et de l’utilisateur"},
+                {"num":"5. AC 3","nom": "Identifier les critères de faisabilité d’un projet informatique"}
+            ]
+        },
+        {
+            "url":"../ressources/img/siteprojet-edited.png",
+            "titre":"Site Internet",
+            "description":["Il s’agit d’une réalisation qui doit correspondre aux besoins spécifiques d’un client, ici le client est un enseignant. Nous sommes cinq étudiants sur ce projet, et chacun d’entre nous a un rôle bien défini. Le mien est celui du product Owner. Cela consiste à assurer la relation entre le client et l’autre partie de l’équipe informatique . Je suis un coordonnateur. Je dois aussi m’assurer que la commande est claire et réalisable avant de demander le codage."],
+            "texte_image":"capture d'une class en PHP",
+            "position":true,
+            "competances":[
+                {"num":"1. AC 1","nom": "Choisir et implémenter les architectures adaptées"},
+                {"num":"1. AC 2","nom": "Faire évoluer une application existante"},
+                {"num":"1. AC 3","nom": "Intégrer des solutions dans un environnement de production"},
+                {"num":"2. AC 2","nom": "Profiler, analyser et justifier le comportement d’un code existant"},
+                {"num":"3. AC 3","nom": "Sécuriser les services et données d’un système"},
+                {"num":"4. AC 2","nom": "Assurer la confidentialité des données (intégrité et sécurité)"},
+                {"num":"5. AC 1","nom": "Identifier les processus présents dans une organisation en vue d’améliorer les systèmes d’information"},
+                {"num":"5. AC 2","nom": "Formaliser les besoins du client et de l’utilisateur"},
+                {"num":"5. AC 3","nom": "Identifier les critères de faisabilité d’un projet informatique"},
+                {"num":"5. AC 4","nom": "Définir et mettre en œuvre une démarche de suivi de projet"}
+            ]
+        },
+        {
+            "url":"../ressources/img/jeudelavie.gif",
+            "titre":"Jeu de la vie JS",
+            "description":["Le Jeu de la Vie est un automate cellulaire développé par John Conway en 1970. Il se joue sur une grille bidimensionnelle où chaque cellule peut être soit vivante, soit morte. Le jeu évolue selon des règles simples : une cellule vivante avec deux ou trois voisines vivantes reste vivante à la génération suivante, sinon elle meurt, tandis qu’une cellule morte avec exactement trois voisines vivantes devient vivante à la génération suivante. Mon implémentation en JavaScript permet de visualiser cette évolution sur une grille dont la taille est divisée par deux, offrant une expérience interactive tout en conservant l’essence du jeu original."],
+            "texte_image":"gif d’une population",
+            "position":false,
+            "competances":[
+                {"num":"1. AC 1","nom": "Choisir et implémenter les architectures adaptées"},
+                {"num":"2. AC 1","nom": "Anticiper les résultats de diverses métriques (temps d’exécution, occupation mémoire…)"},
+                {"num":"5. AC 3","nom": "Identifier les critères de faisabilité d’un projet informatique"},
+                {"num":"5. AC 4","nom": "Définir et mettre en œuvre une démarche de suivi de projet"}
+            ]
+        },
+        {
+            "url":"../ressources/img/trellotrolle.png",
+            "titre":"Trellotrolle",
+            "description":["Ce projet est en cour de réalisation. Il s’agit d’une réalisation qui a pour objectif d’améliorer un code d’une page web fournis fait en PHP/HTML . Pour cette SAE nous sommes en groupe de 5 et nous devons repenser à l’ensemble du projet à commencer par son analyse. Maintenant, après avoir repensé la Base de Donnée, trouvé les failles et noté les erreurs de programmation, nous sommes actuellement en train d’améliorer, corriger les erreurs de ce programmeur débutant."],
+            "texte_image":"capture du site",
+            "position":true,
+            "competances":[
+                {"num":"1. AC 1","nom": "Choisir et implémenter les architectures adaptées"},
+                {"num":"1. AC 2","nom": "Faire évoluer une application existante"},
+                {"num":"1. AC 1","nom": "Concevoir et développer des applications communicantes"},
+                {"num":"2. AC 1","nom": "Anticiper les résultats de diverses métriques (temps d’exécution, occupation mémoire…)"},
+                {"num":"2. AC 2","nom": "Profiler, analyser et justifier le comportement d’un code existant"},
+                {"num":"3. AC 3","nom": "Sécuriser les services et données d’un système"},
+                {"num":"4. AC 1","nom": "Optimiser les modèles de données de l’entreprise"},
+                {"num":"4. AC 2","nom": "Assurer la confidentialité des données (intégrité et sécurité)"},
+                {"num":"4. AC 4","nom": "Manipuler des données hétérogènes"},
+                {"num":"5. AC 1","nom": "Identifier les processus présents dans une organisation en vue d’améliorer les systèmes d’information"},
+                {"num":"5. AC 4","nom": "Définir et mettre en œuvre une démarche de suivi de projet"}
+            ]
+        }
+    ],
+    "skills":[
+        {
+            "url":"../ressources/img/langage/jsLogo.png"
+        },
+        {
+            "url":"../ressources/img/langage/javaLogo.png"
+        },
+        {
+            "url":"../ressources/img/langage/phpLogo.png"
+        },
+        {
+            "url":"../ressources/img/langage/symfonyLogo.png"
+        },
+        {
+            "url":"../ressources/img/langage/postgreLogo.png"
+        },
+        {
+            "url":"../ressources/img/langage/pythonLogo.png"
+        },
+        {
+            "url":"../ressources/img/langage/sqlLogo.png"
+        }
+    ]
+}

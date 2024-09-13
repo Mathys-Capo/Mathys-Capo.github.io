@@ -1,0 +1,57 @@
+---
+layout: layout_basic
+permalink: /skills/
+title: Mes compétence
+---
+<section class="content_general">
+    <h2 class="section-title">Compétence</h2>
+
+    <div class="container">
+        <div class="glideTop">
+            <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                {% assign langage = 1 %}
+                {% for img in site.data.img.skills %}
+                    <li class="glide__slide"><img src="{{img.url}}" alt=""/></li>
+                    {% assign langage = langage | plus:1 %}
+                {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>   
+      
+        <div>
+            <h2 class="skills__subtitle">Profesional Skills</h2>
+            <p class="skills__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit optio id vero amet, alias architecto consectetur error eum eaque sit.</p>
+            <div class="skills__data">
+                <div class="skills__names">
+                    <i class='bx bxl-html5 skills__icon'></i>
+                    <span class="skills__name">HTML5</span>
+                </div>
+                <div class="skills__bar skills__html">
+
+                </div>
+                <div>
+                    <span class="skills__percentage">95%</span>
+                </div>
+            </div>
+        
+        </div>
+
+        <div class="container">
+            <div class="glideBottom">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                    {% assign langage = 1 %}
+                    {% for img in site.data.img.skills %}
+                        <li class="glide__slide"><img src="{{img.url}}" alt=""/></li>
+                        {% assign langage = langage | plus:1 %}
+                    {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div> 
+    
+    </div>
+</section>
+

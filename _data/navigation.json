@@ -1,0 +1,24 @@
+{
+    "pages":[
+        {
+            "url":"/accueil/",
+            "title": "Accueil",
+            "name": "accueil"
+        },
+        {
+            "url":"/skills/",
+            "title": "Compétence",
+            "name": "Compétence"
+        },
+        {
+            "url":"/projets/",
+            "title": "Projets",
+            "name": "Projets"
+        },
+        {
+            "url":"/contact/",
+            "title": "Contact",
+            "name": "Contact"
+        }
+    ]
+}
