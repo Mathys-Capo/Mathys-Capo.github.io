@@ -84,6 +84,7 @@ nav>a{
   backdrop-filter: blur(10px);
   background-size: cover;
   display: flex;
+  padding-bottom: 5%;
 }
 #accueil_projets>#description{
   background-color: rgba(255, 255, 255, 0.20);
@@ -148,7 +149,7 @@ nav>a{
   margin-left: 30%;
 }
 #projet_num3{
-  margin-top: -8%;
+  margin-top: -2%;
   margin-left: -34%;
 }
 
@@ -247,4 +248,11 @@ footer{
   align-items: center;
   filter: invert(39%) sepia(52%) saturate(646%) hue-rotate(203deg) brightness(101%) contrast(97%);
   gap: 20px;
+}
+
+
+body::-webkit-scrollbar {
+ 
+  display: none;
+
 }

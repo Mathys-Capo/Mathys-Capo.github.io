@@ -42,18 +42,7 @@ anime({
   });
   
   
-  
-window.addEventListener('scroll', function() {
-    var scrolledY = window.scrollY;
-    var content_accueil = document.getElementById('content_accueil');
-    var accueil_projets = document.getElementById('content_accueil');
-    let coef=1.2
-    if(scrolledY<screenHeight*coef){
-        accueil_projets.style.transform = 'translateY(' + scrolledY*2  + 'px)';
-        accueil_projets.style.opacity = 1-(scrolledY/600)
-    }
- 
-    if (scrolledY > screenHeight*coef) {
-        window.scrollTo(0, screenHeight*coef);
-    }
-  });
+
+
+
+
