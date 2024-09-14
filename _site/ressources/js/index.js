@@ -1,3 +1,6 @@
+const screenWidth = window.innerWidth;
+const screenHeight = window.innerHeight;
+
 
 let var_translateY=20;
 let var_translateX=20;
@@ -40,15 +43,12 @@ anime({
   
   
   
-  
-
 window.addEventListener('scroll', function() {
     var scrolledY = window.scrollY;
     var content_accueil = document.getElementById('content_accueil');
     var accueil_projets = document.getElementById('content_accueil');
-    console.log(scrolledY)
-
-    if(scrolledY<1200){
+    let coef=1.2
+    if(scrolledY<screenHeight*coef){
         accueil_projets.style.transform = 'translateY(' + scrolledY*2  + 'px)';
         accueil_projets.style.opacity = 1-(scrolledY/600)
         content_accueil.style.visibility = 'visible' 
@@ -56,8 +56,8 @@ window.addEventListener('scroll', function() {
     else{
         content_accueil.style.visibility = 'hidden'
     }
-
-    if (scrolledY > 1200) {
-        window.scrollTo(0, 1200);
+ 
+    if (scrolledY > screenHeight*coef) {
+        window.scrollTo(0, screenHeight*coef);
     }
   });

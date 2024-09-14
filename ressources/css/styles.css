@@ -60,6 +60,7 @@ nav{
   top: 0px;
   display: flex;
   align-items: center;
+  z-index: 10; 
   
 }
 nav>a{
@@ -82,14 +83,68 @@ nav>a{
 
 #accueil_projets{
   height: 100vh;
-  background-color: aqua;
+  backdrop-filter: blur(10px);
   background-size: cover;
+  display: flex;
+}
+#accueil_projets>#description{
+  background-color: rgba(255, 255, 255, 0.20);
+  text-align: justify;
+  width: 50%;
+  box-sizing: border-box;
+  margin-left: 5%;
+  color: var(--white);
+  border-radius: 50px;
+  margin-top: 12%;
+  height: fit-content;
+
+}
+#description>h1{
+  color: var(--blue);
+  margin-left: inherit;
+  font-size: 40px;
+}
+#description>h2{
+  margin-left: inherit;
+  font-size: 24px;
+}
+#description>p{
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size: 20px;
 }
 
+#projets{
+  justify-content: center;
+}
+.projet{
+  color: var(--white);
+  width: 60%;
+  border: 1px solid var(--white);
+  border-radius: 50px;
+}
+.projet>div{
+  display: flex;
+  justify-content: space-between;
+}
+.projet>div>.numero, .projet>div>.type{
+  font-size: 25px;
+}
+.projet>div>.numero{
+  color: var(--blue);
+}
+.projet>*{
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.projet>h3{
+  font-weight: bold;
+}
 
-
-
-
+#projet_num1 {
+  margin-top: 10%;
+  margin-left: 6%;
+}
 
 
 /* CSS */
