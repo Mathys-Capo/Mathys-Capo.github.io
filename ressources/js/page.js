@@ -6,8 +6,8 @@ window.addEventListener('scroll', function() {
 
     let opacity = 1-(scrolledY/1000)
     accueil_projets.style.opacity = opacity
-    if(scrolledY<=370){
-        accueil_projets.style.transform = 'translateY(' + scrolledY*2  + 'px)';
+    if(scrolledY<=450){
+        accueil_projets.style.transform = 'translateY(' + scrolledY*2.2  + 'px)';
     }
 
   });
