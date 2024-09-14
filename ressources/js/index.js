@@ -40,9 +40,6 @@ anime({
     easing: 'linear',
     delay: var_delay*3
   });
-  
-  
-
 
 
 

@@ -1,6 +1,6 @@
 window.addEventListener('scroll', function() {
     var scrolledY = window.scrollY;
-    var content_accueil = document.getElementById('content_accueil');
+    var scrollbar = document.getElementById('scrollbar');
     var accueil_projets = document.getElementById('content_accueil');
     let coef=1.3
 
@@ -8,6 +8,7 @@ window.addEventListener('scroll', function() {
     accueil_projets.style.opacity = opacity
     if(scrolledY<=450){
         accueil_projets.style.transform = 'translateY(' + scrolledY*2.2  + 'px)';
+        scrollbar.style.transform = 'translateY(' + scrolledY  + 'px)';
     }
 
   });

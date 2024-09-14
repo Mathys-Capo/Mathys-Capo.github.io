@@ -65,6 +65,7 @@ nav{
   z-index: 10; 
   margin-left: 3%;
   margin-right: 3%;
+  background-color: var(--black);
 }
 nav>a{
   padding: 10px;
@@ -253,7 +254,14 @@ footer{
 
 
 body::-webkit-scrollbar {
- 
   display: none;
-
+}
+#scrollbar{
+    width: 25px;
+    height: 175px; 
+    background-color: var(--blue); 
+    border-radius: 20px; 
+    position: fixed;
+    right: 0%;
+    z-index: 10;
 }
