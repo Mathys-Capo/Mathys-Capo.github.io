@@ -1,5 +1,6 @@
 :root{
-  --background:black;
+  --black:#000000;
+  --white:#FFFFFF;
   --blue: #5263FE;
 
 }
@@ -7,7 +8,7 @@
   max-width: 100%;
 }
 body{
-  background-color: var(--background);  
+  background-color: var(--black);   
   position: relative;
   z-index: 1;
   margin: 0;
@@ -37,12 +38,12 @@ body{
 #content_accueil{
   color: #FFFFFF;
   font-size: 250%;
-  width: 55%;
   display: flex;
   height: 100vh;
 }
-.titre_accueil{
-  width: 20%;
+
+#content_accueil .block{
+  width: 80%;
 }
 
 .row{
@@ -96,9 +97,9 @@ a{
   text-decoration: none;
 }
 .button-cv {
-  background-color: var(--background);
+  background-color: var(--blue);
   align-items: center;
-  border: 1px solid #DFDFDF;
+  border: 1px solid var(--blue);
   border-radius: 50px;
   box-sizing: border-box;
   color: #ffffff;
@@ -118,9 +119,9 @@ a{
   font-size: 65%;
 }
 .button-nav {
-  background-color:var(--background);
+  background-color:var(--black);
   align-items: center;
-  border: 1px solid #DFDFDF;
+  border: 1px solid var(--blue);
   border-radius: 50px;
   box-sizing: border-box;
   color: #ffffff;
