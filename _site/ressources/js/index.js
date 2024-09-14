@@ -51,10 +51,6 @@ window.addEventListener('scroll', function() {
     if(scrolledY<screenHeight*coef){
         accueil_projets.style.transform = 'translateY(' + scrolledY*2  + 'px)';
         accueil_projets.style.opacity = 1-(scrolledY/600)
-        content_accueil.style.visibility = 'visible' 
-    }
-    else{
-        content_accueil.style.visibility = 'hidden'
     }
  
     if (scrolledY > screenHeight*coef) {
