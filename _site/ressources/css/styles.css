@@ -12,8 +12,7 @@ body{
   position: relative;
   z-index: 1;
   margin: 0;
-  margin-left: 3%;
-  margin-right: 3%;
+
   margin-top: 10%;
 }
 
@@ -41,6 +40,8 @@ body{
   display: flex;
   height: 100vh;
   padding-top: 5%;
+  margin-left: 3%;
+  margin-right: 3%;
 }
 
 #content_accueil .block{
@@ -62,6 +63,8 @@ nav{
   display: flex;
   align-items: center;
   z-index: 10; 
+  margin-left: 3%;
+  margin-right: 3%;
 }
 nav>a{
   padding: 10px;
@@ -76,10 +79,6 @@ nav>a{
   gap: 30px;
 }
 
-
-#croissantLune{
-  height: 35px;
-}
 
 #accueil_projets{
   backdrop-filter: blur(10px);
