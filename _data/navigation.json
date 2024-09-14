@@ -1,7 +1,7 @@
 {
     "pages":[
         {
-            "url":"/accueil/",
+            "url":"/",
             "title": "Accueil",
             "name": "accueil"
         },
