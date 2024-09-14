@@ -40,6 +40,7 @@ body{
   font-size: 250%;
   display: flex;
   height: 100vh;
+  padding-top: 5%;
 }
 
 #content_accueil .block{
@@ -61,7 +62,6 @@ nav{
   display: flex;
   align-items: center;
   z-index: 10; 
-  
 }
 nav>a{
   padding: 10px;
@@ -82,7 +82,6 @@ nav>a{
 }
 
 #accueil_projets{
-  height: 100vh;
   backdrop-filter: blur(10px);
   background-size: cover;
   display: flex;
@@ -142,8 +141,16 @@ nav>a{
 }
 
 #projet_num1 {
-  margin-top: 10%;
-  margin-left: 6%;
+  margin-top: 19%;
+  margin-left: 4%;
+}
+#projet_num2{
+  margin-top: 5%;
+  margin-left: 30%;
+}
+#projet_num3{
+  margin-top: 2%;
+  margin-left: -18%;
 }
 
 
@@ -223,3 +230,22 @@ a{
   color: #ffffff;
   margin:20px;
   }
+
+footer{ 
+    width: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 10; 
+    background-color: var(--black);
+    color: var(--white);
+}
+.imagefooter{
+  height: 70px;
+  width: 70px;
+}
+#imagesFooter{
+  margin-left: auto;
+  align-items: center;
+  filter: invert(39%) sepia(52%) saturate(646%) hue-rotate(203deg) brightness(101%) contrast(97%);
+  gap: 20px;
+}
