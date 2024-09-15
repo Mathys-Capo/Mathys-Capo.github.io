@@ -1,3 +1,4 @@
+/*
 window.addEventListener('scroll', function() {
     var scrolledY = window.scrollY;
     var scrollbar = document.getElementById('scrollbar');
@@ -14,3 +15,4 @@ window.addEventListener('scroll', function() {
     }
 
   });
+*/

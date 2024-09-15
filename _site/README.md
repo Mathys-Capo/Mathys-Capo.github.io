@@ -1,4 +1,6 @@
-# Portfolio Responsive
+# Commandes
+jekyll serve
+
 
 ## Documentations utiles
 - Jekyll https://jekyllrb.com

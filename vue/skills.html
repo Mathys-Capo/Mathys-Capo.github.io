@@ -1,57 +1,118 @@
 ---
 layout: layout_basic
 permalink: /skills/
-title: Mes compétence
+title: Mes compétences
 ---
-<section class="content_general">
-    <h2 class="section-title">Compétence</h2>
+<script src="../ressources/js/index.js"></script>
+<script src="../ressources/js/skills.js"></script>
+<link rel="stylesheet" href="../../ressources/css/skills.css"> 
 
-    <div class="container">
-        <div class="glideTop">
-            <div class="glide__track" data-glide-el="track">
-                <ul class="glide__slides">
-                {% assign langage = 1 %}
-                {% for img in site.data.img.skills %}
-                    <li class="glide__slide"><img src="{{img.url}}" alt=""/></li>
-                    {% assign langage = langage | plus:1 %}
-                {% endfor %}
-                </ul>
+<body>
+    <section id="skills" class="container mt-5 py-5">
+        <h2 class="text-center text-primary mb-5">Mes Compétences</h2>
+
+        <!-- Row to hold the skill cards -->
+        <div class="row justify-content-center">
+
+            <!-- Java Card -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm h-100">
+                    <img src="../ressources/img/langage/javaLogo.png" class="card-img-top" alt="Java Logo">
+                    <div class="card-body">
+                        <h5 class="card-title">Java</h5>
+                        <p class="card-text">Je suis compétent en Java, avec une expérience dans le développement de logiciels robustes et évolutifs.</p>
+                    </div>
+                </div>
             </div>
+
+            <!-- PHP Card -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm h-100">
+                    <img src="../ressources/img/langage/phpLogo.png" class="card-img-top" alt="PHP Logo">
+                    <div class="card-body">
+                        <h5 class="card-title">PHP</h5>
+                        <p class="card-text">PHP est l'un de mes langages de prédilection, utilisé principalement pour le développement de sites web dynamiques et d'APIs.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- JavaScript Card -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm h-100">
+                    <img src="../ressources/img/langage/jsLogo.png" class="card-img-top" alt="JavaScript Logo">
+                    <div class="card-body">
+                        <h5 class="card-title">JavaScript</h5>
+                        <p class="card-text">Expertise en JavaScript pour créer des interfaces utilisateur interactives, dynamiques et réactives.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SQL Card -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm h-100">
+                    <img src="../ressources/img/langage/sqlLogo.png" class="card-img-top" alt="SQL Logo">
+                    <div class="card-body">
+                        <h5 class="card-title">SQL</h5>
+                        <p class="card-text">Maîtrise des bases de données relationnelles, création de requêtes complexes et optimisation des performances.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CSS Card -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm h-100">
+                    <img src="../ressources/img/langage/cssLogo.png" class="card-img-top" alt="CSS Logo">
+                    <div class="card-body">
+                        <h5 class="card-title">CSS</h5>
+                        <p class="card-text">Maîtrise du CSS pour la mise en page et le design responsive de sites web modernes.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- C Language Card -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm h-100">
+                    <img src="../ressources/img/langage/cLogo.png" class="card-img-top" alt="C Logo">
+                    <div class="card-body">
+                        <h5 class="card-title">C (Débutant)</h5>
+                        <p class="card-text">Apprentissage des bases du langage C, gestion de la mémoire et des pointeurs.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PostgreSQL Card -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm h-100">
+                    <img src="../ressources/img/langage/postgresqlLogo.png" class="card-img-top" alt="PostgreSQL Logo">
+                    <div class="card-body">
+                        <h5 class="card-title">PostgreSQL</h5>
+                        <p class="card-text">Maîtrise des bases de données PostgreSQL, création de requêtes SQL complexes et gestion de la performance.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Python Card -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm h-100">
+                    <img src="../ressources/img/langage/pythonLogo.png" class="card-img-top" alt="Python Logo">
+                    <div class="card-body">
+                        <h5 class="card-title">Python</h5>
+                        <p class="card-text">Utilisation de Python pour des scripts d'automatisation, développement d'applications et manipulation de données.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Symfony Card -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm h-100">
+                    <img src="../ressources/img/langage/symfonyLogo.png" class="card-img-top" alt="Symfony Logo">
+                    <div class="card-body">
+                        <h5 class="card-title">Symfony</h5>
+                        <p class="card-text">Développement d'applications web avec le framework Symfony, gestion des routes, des formulaires et des bases de données.</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
-    </div>   
-      
-        <div>
-            <h2 class="skills__subtitle">Profesional Skills</h2>
-            <p class="skills__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit optio id vero amet, alias architecto consectetur error eum eaque sit.</p>
-            <div class="skills__data">
-                <div class="skills__names">
-                    <i class='bx bxl-html5 skills__icon'></i>
-                    <span class="skills__name">HTML5</span>
-                </div>
-                <div class="skills__bar skills__html">
-
-                </div>
-                <div>
-                    <span class="skills__percentage">95%</span>
-                </div>
-            </div>
-        
-        </div>
-
-        <div class="container">
-            <div class="glideBottom">
-                <div class="glide__track" data-glide-el="track">
-                    <ul class="glide__slides">
-                    {% assign langage = 1 %}
-                    {% for img in site.data.img.skills %}
-                        <li class="glide__slide"><img src="{{img.url}}" alt=""/></li>
-                        {% assign langage = langage | plus:1 %}
-                    {% endfor %}
-                    </ul>
-                </div>
-            </div>
-        </div> 
-    
-    </div>
-</section>
-
+    </section>
+</body>

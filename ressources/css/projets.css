@@ -1,0 +1,106 @@
+/* Personnalisation de l'accordéon */
+.accordion-button {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #0d6efd;
+    background-color: #e9ecef;
+    border: none;
+    border-radius: 10px;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #0d6efd;
+    color: white;
+}
+
+.accordion-body {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+/* Style de la recherche */
+.competences .search {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f1f3f5;
+}
+
+/* Style de la liste des compétences */
+.competences .list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.competences .list li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+}
+
+.competences .list li:hover {
+    background-color: #e9ecef;
+}
+
+.competences .list li h4.num {
+    font-weight: bold;
+    color: #0d6efd;
+}
+
+.competences .list li p.nom {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Projets */
+.projet-item {
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.projet-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #343a40;
+}
+
+.projet-description p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.projets_img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Style des éléments */
+.text-primary {
+    color: #0d6efd !important;
+}
+
+/* Pour les petits écrans */
+@media (max-width: 768px) {
+    .projet-item {
+        padding: 20px;
+    }
+
+    .projet-title {
+        font-size: 1.25rem;
+    }
+    
+    .projets_img {
+        max-width: 100%;
+        height: auto;
+    }
+}

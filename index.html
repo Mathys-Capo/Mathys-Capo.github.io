@@ -2,66 +2,76 @@
 layout: layout_basic
 title: Page d'accueil
 ---
+<link rel="stylesheet" href="../ressources/css/accueil.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="./ressources/js/index.js"></script>
+
 <body>
-    <section id="content_accueil" >
-        <div class="">
-            <div class="block">
-                <h1 class="titre_accueil">
-                    Salut, moi c’est {{ site.data.information.prenom }} {{ site.data.information.name }} </br>
-                    {{ site.data.information.etude }}
-                </h1>
-            </div>
-    
-            <div class="block">
-                <h3>
-                    {{ site.data.information.complement }}
-                </h3>
-                <p id="signification"> {{ site.data.information.signification }}</p>     
-            </div>
-            <div>
-                <a href="./ressources/pdf/cv.pdf" download="CV-CAPO-Mathys.pdf" class="button">
-                    <button class="button-cv" role="button">'Télécharger mon CV'</button>
-                </a>
-            </div>
-        
+    <section id="content_accueil" class="container text-white d-flex flex-column justify-content-center vh-100">
+        <div>
+            <h1 class="titre_accueil text-center">
+                Salut, moi c’est {{ site.data.information.prenom }} {{ site.data.information.name }} <br>
+                {{ site.data.information.etude }}
+            </h1>
+        </div>
+        <div class="mt-4 text-center">
+            <h3>{{ site.data.information.complement }}</h3>
+            <p id="signification">{{ site.data.information.signification }}</p>
+        </div>
+        <div class="text-center mt-4">
+            <a href="./ressources/pdf/cv.pdf" download="CV-CAPO-Mathys.pdf">
+                <button class="btn btn-primary btn-lg">Télécharger mon CV</button>
+            </a>
         </div>
     </section>
 
-
-    <section id="accueil_projets">
-        <div id="description">
-            <h1>&lt;h1&gt;A PROPOS&lt;/h1&gt;</h1>
+    <section id="accueil_projets" class="container mt-5 text-white">
+        <div id="description" class="bg-secondary bg-opacity-50 rounded p-4">
+            <h1 class="text-primary">&lt;h1&gt;A PROPOS&lt;/h1&gt;</h1>
             <h2>Qui suis-je ?</h2>
             <p>
-                Je m’appel Mathys, j’ai 20 ans. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Je m’appelle Mathys, j’ai 20 ans. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
             </p>
-            
         </div>
-        <div id="projets">
-            <div class="projet" id="projet_num1">
-                <div>
-                    <p class="numero">01</p><p class="type">Dévellopement Web</p>
+    
+        <div id="projets" class="row mt-5 g-4">
+            <div id="projet_num1" class="col-md-4">
+                <div class="projet position-relative">
+                    <div class="content p-4 d-flex flex-column justify-content-between h-100">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p class="numero">01</p>
+                            <p class="type badge bg-light text-dark">Développement Web</p>
+                        </div>
+                        <h3>Traducteur en orthographe d’Apparat</h3>
+                        <p>Lorem ipsum dolor sit amet...</p>
+                    </div>
                 </div>
-                <h3>Traducteur en orthographe d’Apparat</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
             </div>
-            <div class="projet" id="projet_num2">
-                <div>
-                    <p class="numero">02</p><p class="type">Dévellopement Web</p>
+            <div id="projet_num2" class="col-md-4">
+                <div class="projet position-relative">
+                    <div class="content p-4 d-flex flex-column justify-content-between h-100">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p class="numero">02</p>
+                            <p class="type badge bg-light text-dark">Développement Web</p>
+                        </div>
+                        <h3>Jeu de la vie JS</h3>
+                        <p>Lorem ipsum dolor sit amet...</p>
+                    </div>
                 </div>
-                <h3>Jeu de la vie JS</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
             </div>
-            <div class="projet" id="projet_num3">
-                <div>
-                    <p class="numero">03</p><p class="type">Dévellopement Web</p>
+            <div id="projet_num3" class="col-md-4">
+                <div class="projet position-relative">
+                    <div class="content p-4 d-flex flex-column justify-content-between h-100">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p class="numero">03</p>
+                            <p class="type badge bg-light text-dark">Développement Web</p>
+                        </div>
+                        <h3>Site Internet</h3>
+                        <p>Lorem ipsum dolor sit amet...</p>
+                    </div>
                 </div>
-                <h3>Site Internet</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
             </div>
         </div>
     </section>
+    
 </body>
