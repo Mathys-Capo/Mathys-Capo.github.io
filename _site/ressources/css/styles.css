@@ -6,14 +6,15 @@
 }
 #content_accueil{
   max-width: 100%;
+  line-height: 0;
 }
 body{
   background-color: var(--black);   
   position: relative;
   z-index: 1;
   margin: 0;
-
   margin-top: 10%;
+  font-family: 'Red Hat Display'
 }
 
 .wave {
@@ -47,7 +48,9 @@ body{
 #content_accueil .block{
   width: 80%;
 }
-
+#signification{
+  width: max-content;
+}
 .row{
   display: contents;
   
@@ -115,6 +118,20 @@ nav>a{
   font-size: 20px;
 }
 
+#capacite{
+  position: absolute;
+    left: 30%;
+    bottom: 35%;
+    gap: 15%;
+    display: flex;
+}
+.carre{
+  width: 100px;
+  height: 100px;
+  background-color: var(--blue);
+  margin-right: -10%;
+}
+
 #projets{
   justify-content: center;
 }
@@ -131,8 +148,20 @@ nav>a{
 .projet>div>.numero, .projet>div>.type{
   font-size: 25px;
 }
+.projet>div>.type{
+  border: 1px solid var(--white);
+  border-radius: 50px;
+  padding: inherit;
+  height: fit-content;
+}
 .projet>div>.numero{
-  color: var(--blue);
+  color: var(--white);
+  background-color: var(--black);
+  height: 35px;
+  width: 35px;
+  padding-left: 2%;
+  padding-top: 1%;
+  border-radius: 50%;
 }
 .projet>*{
   padding-left: 5%;
@@ -155,6 +184,30 @@ nav>a{
   margin-left: -34%;
 }
 
+#projet_num1:hover{
+  background-image: url('../img/orthoapparat.png');
+  color: var(--blue);
+}
+#projet_num2:hover{
+  background-image: url('../img/jeudelavie.gif');
+  color: var(--blue);
+}
+#projet_num3:hover{
+  background-image: url('../img/trellotrolle.png');
+  color: var(--blue);
+}
+#projet_num1:hover h3, #projet_num1:hover p:not(.numero):not(.type){
+  opacity: 0;
+}
+#projet_num2:hover h3, #projet_num2:hover p:not(.numero):not(.type){
+  opacity: 0;
+}
+#projet_num3:hover h3, #projet_num3:hover p:not(.numero):not(.type){
+  opacity: 0;
+}
+#projet_num2:hover>div>.type{
+  background-color: var(--white);
+}
 
 /* CSS */
 a{
@@ -262,6 +315,7 @@ body::-webkit-scrollbar {
     background-color: var(--blue); 
     border-radius: 20px; 
     position: fixed;
-    right: 0%;
+    right: 1%;
     z-index: 10;
+    top: 10px;
 }

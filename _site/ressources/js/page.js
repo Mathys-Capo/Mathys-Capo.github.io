@@ -6,9 +6,11 @@ window.addEventListener('scroll', function() {
 
     let opacity = 1-(scrolledY/1000)
     accueil_projets.style.opacity = opacity
+
+    scrollbar.style.transform = 'translateY(' +  window.scrollY*0.8  + 'px)';
     if(scrolledY<=450){
         accueil_projets.style.transform = 'translateY(' + scrolledY*2.2  + 'px)';
-        scrollbar.style.transform = 'translateY(' + scrolledY  + 'px)';
+        
     }
 
   });
