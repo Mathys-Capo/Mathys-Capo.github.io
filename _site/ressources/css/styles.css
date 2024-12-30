@@ -5,11 +5,14 @@
 
 }
 
-html body {
+body{
     background-color: var(--black) !important;
-    font-family: 'Red Hat Display';
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    margin-top: 10%;
+    font-family: 'Red Hat Display'
 }
-
 .row{
     display: contents;
 
@@ -132,20 +135,6 @@ footer{
     gap: 20px;
 }
 
-
-body::-webkit-scrollbar {
-    display: none;
-}
-#scrollbar{
-    width: 25px;
-    height: 175px;
-    background-color: var(--blue);
-    border-radius: 20px;
-    position: fixed;
-    right: 1%;
-    z-index: 50;
-    top: 50px;
-}
 footer{
     z-index: 100;
     position: absolute;

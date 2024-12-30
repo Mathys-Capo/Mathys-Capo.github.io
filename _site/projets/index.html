@@ -37,7 +37,11 @@
                     </li>
                     
                     <li class="nav-item">
-                        <button onclick='window.location.href = "/skills/"' class="btn btn-outline-primary rounded-pill nav-link text-white">Compétence</button>
+                        <button onclick='window.location.href = "/competences/"' class="btn btn-outline-primary rounded-pill nav-link text-white">Compétence</button>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <button onclick='window.location.href = "/competencesBUT/"' class="btn btn-outline-primary rounded-pill nav-link text-white">Compétence du BUT</button>
                     </li>
                     
                     <li class="nav-item">
@@ -61,8 +65,6 @@
         <img src="../ressources/img/bg-wave/wave4.png" id="wave4"/>
     </div>
 
-    <div id="scrollbar"></div>
-
        
 
 <script src="./ressources/js/projets.js"></script>
@@ -74,7 +76,7 @@
     <div class="projets">
         
         
-            <div class="projet-item mb-5">
+            <div class="projet-item mb-5 bg-secondary bg-opacity-70">
                 <h3 class="projet-title text-uppercase text-dark">Traducteur en orthographe d’Apparat</h3>
                 <div class="row align-items-center">
                     <div class="col-sm-4 ">
@@ -143,7 +145,7 @@
             <br>
             
         
-            <div class="projet-item mb-5">
+            <div class="projet-item mb-5 bg-secondary bg-opacity-70">
                 <h3 class="projet-title text-uppercase text-dark">Site Internet</h3>
                 <div class="row align-items-center">
                     <div class="col-sm-4 order-last">
@@ -246,7 +248,7 @@
             <br>
             
         
-            <div class="projet-item mb-5">
+            <div class="projet-item mb-5 bg-secondary bg-opacity-70">
                 <h3 class="projet-title text-uppercase text-dark">Jeu de la vie JS</h3>
                 <div class="row align-items-center">
                     <div class="col-sm-4 ">
@@ -313,7 +315,7 @@
             <br>
             
         
-            <div class="projet-item mb-5">
+            <div class="projet-item mb-5 bg-secondary bg-opacity-70">
                 <h3 class="projet-title text-uppercase text-dark">Trellotrolle</h3>
                 <div class="row align-items-center">
                     <div class="col-sm-4 order-last">
@@ -427,20 +429,23 @@
 
 
 <hr largeur="100%"/>
-<footer>
-
-  
-
+<footer class="bg-dark text-center text-white py-4">
   <div>
-    <h2>Portfolio de Mathys CAPO</h2>
+      <h2 class="text-primary">Portfolio de Mathys CAPO</h2>
   </div>
-  <div id="imagesFooter">
-    <a href=""><img class="imagefooter" src="../ressources/img/footer/github.png" ></a>
-    <a href=""><img class="imagefooter" src="../ressources/img/footer/gitlab.png" ></a>
-    <a href=""><img class="imagefooter" src="../ressources/img/footer/linkedin.png" ></a>
+  <div id="imagesFooter" class="d-flex justify-content-center align-items-center mt-3 gap-4">
+      <a href="https://www.linkedin.com/in/mathyscapo/" target="_blank" class="text-primary fs-3">
+          <i class="bi bi-linkedin"></i>
+      </a>
+      <a href="mailto:mathys.capo@etu.umontpellier.fr" class="text-primary fs-3">
+          <i class="bi bi-envelope-fill"></i>
+      </a>
+      <a href="https://gitlabinfo.iutmontp.univ-montp2.fr/capom" target="_blank" class="text-primary fs-3">
+          <i class="bi bi-github"></i>
+      </a>
   </div>
-
 </footer>
+
   
 <div id="endpage"></div>
 

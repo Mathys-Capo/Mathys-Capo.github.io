@@ -3,16 +3,33 @@ layout: layout_basic
 permalink: /contact/
 title: Pour me contacter
 ---
+<link rel="stylesheet" href="../ressources/css/contact.css">
 
-<section class="contact section" id="contact">
-    <h2 class="section-title">Contact</h2>
+<section class="contact section d-flex align-items-center justify-content-center mt-5">
+    <div class="container text-center">
+        <h2 class="section-title text-primary ">Contact</h2>
 
-    <div class="contact__container bd-grid">
-        <form action="" class="contact__form">
-            <input type="text" placeholder="Name" class="contact__input">
-            <input type="mail" placeholder="Email" class="contact__input">
-            <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-            <input type="button" value="Envoyer" class="contact__button button">
-        </form>
+        <div class="row justify-content-center bg-secondary bg-opacity-50">
+            <!-- Coordonnées -->
+            <div class="col-md-6">
+                <h3 class="text-light mb-4">Mes Coordonnées</h3>
+                <ul class="list-unstyled">
+                    <li class="mb-3">
+                        <i class="bi bi-envelope-fill text-primary me-2"></i>
+                        <span class="fw-bold">Email :</span> <a href="mailto:tonemail@example.com" class="text-light">mathys.capo@etu.umontpellier.fr</a>
+                    </li>
+                    <li class="mb-3">
+                        <i class="bi bi-linkedin text-primary me-2"></i>
+                        <span class="fw-bold">LinkedIn :</span> <a href="https://linkedin.com/in/tonprofil" target="_blank" class="text-light">https://www.linkedin.com/in/mathyscapo/</a>
+                    </li>
+                    <li class="mb-3">
+                        <i class="bi bi-github text-primary me-2"></i>
+                        <span class="fw-bold">GitHub :</span> <a href="https://github.com/tonprofil" target="_blank" class="text-light">https://gitlabinfo.iutmontp.univ-montp2.fr/capom</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 </section>
+
+

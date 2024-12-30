@@ -12,7 +12,7 @@ title: Mes travaux
     <div class="projets">
         {% assign projetNum = 1 %}
         {% for projet in site.data.img.projets %}
-            <div class="projet-item mb-5">
+            <div class="projet-item mb-5 bg-secondary bg-opacity-70">
                 <h3 class="projet-title text-uppercase text-dark">{{projet.titre}}</h3>
                 <div class="row align-items-center">
                     <div class="col-sm-4 {% if projet.position %}order-last{% endif %}">

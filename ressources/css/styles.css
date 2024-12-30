@@ -135,20 +135,6 @@ footer{
     gap: 20px;
 }
 
-
-body::-webkit-scrollbar {
-    display: none;
-}
-#scrollbar{
-    width: 25px;
-    height: 175px;
-    background-color: var(--blue);
-    border-radius: 20px;
-    position: fixed;
-    right: 1%;
-    z-index: 50;
-    top: 50px;
-}
 footer{
     z-index: 100;
     position: absolute;

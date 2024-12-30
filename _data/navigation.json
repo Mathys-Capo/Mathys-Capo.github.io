@@ -6,9 +6,14 @@
             "name": "accueil"
         },
         {
-            "url":"/skills/",
+            "url":"/competences/",
             "title": "Compétence",
             "name": "Compétence"
+        },
+        {
+            "url":"/competencesBUT/",
+            "title": "Compétence du BUT",
+            "name": "Compétence du BUT"
         },
         {
             "url":"/projets/",
