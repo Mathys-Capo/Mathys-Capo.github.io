@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color: var(--black);
+    background-color: var(--black) !important;
     position: relative;
     z-index: 1;
     margin: 0;
