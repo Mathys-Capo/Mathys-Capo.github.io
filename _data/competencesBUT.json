@@ -1,0 +1,63 @@
+{
+    "competencesBUT":[
+        {
+            "titre": "3. Administrer des systèmes informatiques communicants complexes",
+            "competences":[
+                {
+                    "nom":"AC 1 – Concevoir et développer des applications communicantes",
+                    "texte":"Développement d’un traducteur pour l’orthographe d’apparat et d’un site internet personnalisé répondant à des besoins spécifiques."
+                },
+                {
+                    "nom":"AC 2 – Utiliser des serveurs et des services réseaux virtualisés",
+                    "texte":"En cours d'acquisition via un projet utilisant PHP et HTML pour le déploiement et la gestion de sites web."
+                },
+                {
+                    "nom":"AC 3 – Sécuriser les services et données d’un système",
+                    "texte":"Mise en place de mesures de sécurité, telles que des alertes en cas de problème avec la phonétique ou la gestion sécurisée des données."
+                }
+            ]
+        },
+        {
+            "titre":"4. Gérer des données de l’information",
+            "competences":[
+                {
+                    "nom":"AC 1 – Optimiser les modèles de données",
+                    "texte":"Engagement dans l’amélioration des modèles de données pour une meilleure efficacité et adaptation aux besoins."
+                },
+                {
+                    "nom":"AC 2 – Assurer la confidentialité des données",
+                    "texte":"Mise en œuvre de mesures de sécurité pour garantir l’intégrité et la confidentialité des données sensibles."
+                },
+                {
+                    "nom":"AC 3 – Restitution de données",
+                    "texte":"Développement de solutions claires et compréhensibles pour visualiser et présenter les données."
+                },
+                {
+                    "nom":"AC 4 – Manipuler des données hétérogènes",
+                    "texte":"Travail avec des bases de données, fichiers CSV et API pour extraire et intégrer des informations pertinentes."
+                }
+            ]
+        },
+        {
+            "titre":"5. Conduire un projet",
+            "competences":[
+                {
+                    "nom":"AC 1 – Identifier les processus",
+                    "texte":"Analyse des processus existants pour identifier les lacunes et opportunités d'amélioration."
+                },
+                {
+                    "nom":"AC 2 – Formaliser les besoins",
+                    "texte":"Recueil et traduction des exigences des parties prenantes en spécifications claires."
+                },
+                {
+                    "nom":"AC 3 – Identifier les critères de faisabilité",
+                    "texte":"Évaluation des contraintes techniques, financières et temporelles pour déterminer la faisabilité"
+                },
+                {
+                    "nom":"AC 4 – Suivi de projet",
+                    "texte":"Mise en œuvre de processus et outils pour surveiller et évaluer la progression des projets."
+                }
+            ]
+        }
+    ]
+}
