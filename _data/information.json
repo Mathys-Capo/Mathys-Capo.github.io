@@ -2,7 +2,7 @@
   "prenom": "Mathys",
   "name": "CAPO",
   "etude": "Etudiant BUT informatique", 
-  "complement": "Parcour RAGDV",
+  "complement": "Parcours RAGDV",
   "signification": "(Réalisation d'applications : conception, développement, validation FI)",
   "gitlab":{
     "url": "https://gitlabinfo.iutmontp.univ-montp2.fr/capom"

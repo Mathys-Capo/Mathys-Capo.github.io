@@ -1,41 +1,45 @@
 {
     "projets":[
         {
+            "id":"Traducteur",
             "url":"../ressources/img/orthoapparat.png",
-            "titre":"Traducteur en orthographe d’Apparat",
-            "description":["L’orthographe d’apparat est un projet de complexification de l’orthographe française volontairement peu intelligible créé en 1977 par le collège de Pataphysique. Cette orthographe est une satire de la langue française qui est difficile de comparer à d’autre langues comme le Turc, Allemand, qui sont des langues qui s’écrivent comme ils se prononcent.","J’ai donc créé un algorithme qui permet la traduction , cependant j’émets une alerte par rapport à la phonétique."],
+            "titre":"Traducteur en orthographe d’Apparat - PERSONNEL",
+            "description":["L’orthographe d’apparat est un projet de complexification de l’orthographe française volontairement peu intelligible créé en 1977 par le collège de Pataphysique. Cette orthographe est une satire de la langue française, souvent difficile à comparer à d’autres langues comme le Turc ou l’Allemand, qui s’écrivent comme elles se prononcent. J’ai donc créé un algorithme qui permet la traduction en orthographe d’apparat, avec une alerte concernant les particularités phonétiques. Ce projet personnel a été réalisé en moins d’un mois, sans contraintes de temps ou techniques particulières. J’ai travaillé seul pour concevoir, développer et tester cet outil. Pour concevoir cet algorithme, j’ai utilisé des approches méthodiques afin de garantir une traduction fidèle tout en tenant compte des particularités complexes de cette orthographe. Des exemples concrets de traduction sont disponibles pour illustrer les résultats obtenus. Ce projet m’a permis de développer des compétences variées, notamment dans la conception d’architectures adaptées, la formalisation des besoins utilisateurs, et la résolution de problèmes liés aux données textuelles."],
             "texte_image":"exemples de traduction",
             "position":false,
             "competances":[
-                {"num":"1. AC 1","nom": "Choisir et implémenter les architectures adaptées"},
-                {"num":"1. AC 3","nom": "Intégrer des solutions dans un environnement de production"},
-                {"num":"5. AC 2","nom": "Formaliser les besoins du client et de l’utilisateur"},
-                {"num":"5. AC 3","nom": "Identifier les critères de faisabilité d’un projet informatique"}
+                {"num": "1. AC 1", "nom": "Choisir et implémenter les architectures adaptées"},
+                {"num": "1. AC 3", "nom": "Intégrer des solutions dans un environnement de production"},
+                {"num": "5. AC 2", "nom": "Formaliser les besoins du client et de l’utilisateur"},
+                {"num": "5. AC 3", "nom": "Identifier les critères de faisabilité d’un projet informatique"},
+                {"num": "4. AC 4", "nom": "Manipuler des données hétérogènes"}
             ]
         },
         {
+            "id":"Site",
             "url":"../ressources/img/siteprojet-edited.png",
-            "titre":"Site Internet",
-            "description":["Il s’agit d’une réalisation qui doit correspondre aux besoins spécifiques d’un client, ici le client est un enseignant. Nous sommes cinq étudiants sur ce projet, et chacun d’entre nous a un rôle bien défini. Le mien est celui du product Owner. Cela consiste à assurer la relation entre le client et l’autre partie de l’équipe informatique . Je suis un coordonnateur. Je dois aussi m’assurer que la commande est claire et réalisable avant de demander le codage."],
+            "titre":"Site Internet - ACADEMIQUE",
+            "description":["Il s’agit d’une réalisation qui doit répondre aux besoins spécifiques d’un client, ici un enseignant. Le site web devait permettre de gérer les inscriptions, les demandes de stage ou d’alternance, ainsi que d’autres fonctions liées à la gestion. Nous étions cinq étudiants sur ce projet, répartis en rôles bien définis. Mon rôle, en tant que Product Owner, consistait à assurer la communication entre le client et l’équipe technique. Ce projet académique s’est déroulé sur une période de quatre mois, organisée en sprints de deux semaines. Les objectifs incluaient la clarification des besoins du client, leur faisabilité technique, et la gestion des priorités pour garantir la satisfaction des attentes. Pour gérer ce projet, j’ai appliqué des méthodologies agiles, en veillant à une communication fluide avec le client et à la clarté des spécifications avant leur mise en œuvre. Des preuves comme des captures d’écran des interfaces et des classes PHP utilisées montrent les résultats obtenus. Les compétences développées incluent la gestion de projet agile, la communication avec le client, et l’intégration de solutions techniques adaptées. En tant que Product Owner, j’ai joué un rôle essentiel dans la coordination du projet et la gestion des livrables."],
             "texte_image":"capture d'une class en PHP",
             "position":true,
             "competances":[
-                {"num":"1. AC 1","nom": "Choisir et implémenter les architectures adaptées"},
-                {"num":"1. AC 2","nom": "Faire évoluer une application existante"},
-                {"num":"1. AC 3","nom": "Intégrer des solutions dans un environnement de production"},
-                {"num":"2. AC 2","nom": "Profiler, analyser et justifier le comportement d’un code existant"},
-                {"num":"3. AC 3","nom": "Sécuriser les services et données d’un système"},
-                {"num":"4. AC 2","nom": "Assurer la confidentialité des données (intégrité et sécurité)"},
-                {"num":"5. AC 1","nom": "Identifier les processus présents dans une organisation en vue d’améliorer les systèmes d’information"},
-                {"num":"5. AC 2","nom": "Formaliser les besoins du client et de l’utilisateur"},
-                {"num":"5. AC 3","nom": "Identifier les critères de faisabilité d’un projet informatique"},
-                {"num":"5. AC 4","nom": "Définir et mettre en œuvre une démarche de suivi de projet"}
+                {"num": "1. AC 1", "nom": "Choisir et implémenter les architectures adaptées"},
+                {"num": "1. AC 2", "nom": "Faire évoluer une application existante"},
+                {"num": "1. AC 3", "nom": "Intégrer des solutions dans un environnement de production"},
+                {"num": "2. AC 2", "nom": "Profiler, analyser et justifier le comportement d’un code existant"},
+                {"num": "3. AC 3", "nom": "Sécuriser les services et données d’un système"},
+                {"num": "4. AC 2", "nom": "Assurer la confidentialité des données (intégrité et sécurité)"},
+                {"num": "5. AC 1", "nom": "Identifier les processus présents dans une organisation en vue d’améliorer les systèmes d’information"},
+                {"num": "5. AC 2", "nom": "Formaliser les besoins du client et de l’utilisateur"},
+                {"num": "5. AC 3", "nom": "Identifier les critères de faisabilité d’un projet informatique"},
+                {"num": "5. AC 4", "nom": "Définir et mettre en œuvre une démarche de suivi de projet"}
             ]
         },
         {
+            "id":"JeuVie",
             "url":"../ressources/img/jeudelavie.gif",
-            "titre":"Jeu de la vie JS",
-            "description":["Le Jeu de la Vie est un automate cellulaire développé par John Conway en 1970. Il se joue sur une grille bidimensionnelle où chaque cellule peut être soit vivante, soit morte. Le jeu évolue selon des règles simples : une cellule vivante avec deux ou trois voisines vivantes reste vivante à la génération suivante, sinon elle meurt, tandis qu’une cellule morte avec exactement trois voisines vivantes devient vivante à la génération suivante. Mon implémentation en JavaScript permet de visualiser cette évolution sur une grille dont la taille est divisée par deux, offrant une expérience interactive tout en conservant l’essence du jeu original."],
+            "titre":"Jeu de la vie JS - PERSONNEL",
+            "description":["Le Jeu de la Vie est un automate cellulaire développé par John Conway en 1970. Il se joue sur une grille bidimensionnelle où chaque cellule peut être vivante ou morte. Mon implémentation en JavaScript permet de visualiser cette évolution sur une grille interactive, divisée par deux pour améliorer la performance tout en conservant l’essence du jeu original. Ce projet personnel a été réalisé en collaboration avec une autre personne, sur une durée d’une semaine. L’objectif principal était de faire fonctionner le jeu tout en assurant une vitesse d’exécution optimale. Pour concevoir ce projet, j’ai travaillé sur l’optimisation de l’algorithme pour garantir une fluidité dans la simulation. Une démonstration sous forme de GIF illustre le fonctionnement et l’évolution des cellules sur la grille. Ce projet m’a permis de renforcer mes compétences en JavaScript, notamment en optimisation d’algorithmes et en gestion d’interfaces interactives. J’ai contribué à la conception de l’algorithme principal et participé au développement de l’interface utilisateur."],
             "texte_image":"gif d’une population",
             "position":false,
             "competances":[
@@ -46,9 +50,10 @@
             ]
         },
         {
+            "id":"Trellotrolle",
             "url":"../ressources/img/trellotrolle.png",
-            "titre":"Trellotrolle",
-            "description":["Ce projet est en cour de réalisation. Il s’agit d’une réalisation qui a pour objectif d’améliorer un code d’une page web fournis fait en PHP/HTML . Pour cette SAE nous sommes en groupe de 5 et nous devons repenser à l’ensemble du projet à commencer par son analyse. Maintenant, après avoir repensé la Base de Donnée, trouvé les failles et noté les erreurs de programmation, nous sommes actuellement en train d’améliorer, corriger les erreurs de ce programmeur débutant."],
+            "titre":"Trellotrolle - ACADEMIQUE",
+            "description":["Ce projet consistait à repenser une application existante, initialement mal conçue, afin d’en améliorer l’efficacité et la fiabilité. L’objectif principal était d’analyser les failles et erreurs du projet, de revoir la conception de la base de données, et d’apporter des corrections au code. Nous étions cinq membres dans l’équipe et avons travaillé sur ce projet pendant quatre mois. Dans ce projet académique, nous avons utilisé une approche méthodique pour repenser la base de données et identifier les faiblesses du code existant. Chaque membre avait un rôle bien défini, et le travail collaboratif nous a permis d’améliorer significativement l’application. L’équipe a procédé à une analyse approfondie et a mis en œuvre des solutions efficaces. Des captures avant et après les modifications illustrent clairement les améliorations apportées. Mes contributions personnelles incluent l’analyse des failles, la correction des erreurs de programmation, et la participation à la refonte de la base de données. Ce projet m’a permis de développer des compétences en refonte et optimisation de systèmes existants, ainsi qu’en sécurisation et gestion des données."],
             "texte_image":"capture du site",
             "position":true,
             "competances":[
@@ -63,6 +68,24 @@
                 {"num":"4. AC 4","nom": "Manipuler des données hétérogènes"},
                 {"num":"5. AC 1","nom": "Identifier les processus présents dans une organisation en vue d’améliorer les systèmes d’information"},
                 {"num":"5. AC 4","nom": "Définir et mettre en œuvre une démarche de suivi de projet"}
+            ]
+        },
+        {
+            "id":"volley",
+            "url":"../ressources/img/volleyClubFront.png",
+            "titre":"Club de volley en Vue - ACADEMIQUE",
+            "description":["Ce projet, réalisé en trois semaines en équipe de trois personnes, avait pour objectif de créer un site web simulant la gestion d’un club de volley. Après avoir développé une API en Symfony, nous avons conçu l’interface front-end avec Vue.js et Bootstrap pour offrir une expérience utilisateur moderne et intuitive. Le site permet de gérer les équipes et les clubs, répondant ainsi aux besoins simulés d’une organisation sportive. Ce projet est désormais terminé, et je suis particulièrement fier du résultat final, qui reflète un travail d’équipe efficace et une bonne maîtrise des technologies utilisées."],
+            "texte_image":"capture du site",
+            "position":false,
+            "competances":[
+                {"num":"1. AC 1","nom": "Choisir et implémenter les architectures adaptées"},
+                {"num":"2. AC 2","nom": "Profiler, analyser et justifier le comportement d'un code existant"},
+                {"num":"2. AC 3","nom": "Choisir et utiliser des bibliothèques et méthodes dédiées au domaine d'application"},
+                {"num":"3. AC 1","nom": "Concevoir et développer des applications communicantes"},
+                {"num":"3. AC 2","nom": "Utiliser des serveurs et des services réseaux virtualisés"},
+                {"num":"3. AC 3","nom": "Sécuriser les services et données d’un système"},
+                {"num":"4. AC 2","nom": "Assurer la confidentialité des données"},
+                {"num":"5. AC 4","nom": "Suivi de projet"}
             ]
         }
     ],

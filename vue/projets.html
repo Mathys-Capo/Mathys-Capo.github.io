@@ -3,16 +3,16 @@ layout: layout_basic
 permalink: /projets/
 title: Mes travaux
 ---
-<script src="./ressources/js/projets.js"></script>
+<script src="../ressources/js/projets.js"></script>
 <link rel="stylesheet" href="../ressources/css/projets.css"> 
 
-<section class="content_general">
-    <h2 class="section-title text-center text-primary mb-5">Mes Projets</h2>
+<section class="content_general pt-5">
+    <h2 class="section-title text-center text-primary mb-5 pt-5">Mes Projets</h2>
 
     <div class="projets">
         {% assign projetNum = 1 %}
         {% for projet in site.data.img.projets %}
-            <div class="projet-item mb-5 bg-secondary bg-opacity-70">
+            <div class="projet-item mb-5 bg-secondary bg-opacity-70" id="{{projet.id}}">
                 <h3 class="projet-title text-uppercase text-dark">{{projet.titre}}</h3>
                 <div class="row align-items-center">
                     <div class="col-sm-4 {% if projet.position %}order-last{% endif %}">
