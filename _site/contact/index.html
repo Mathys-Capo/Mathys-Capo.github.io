@@ -10,8 +10,6 @@
         <script src="../ressources/js/anime.js/anime.min.js"></script>
         <script src="../ressources/js/compiled/parallax.min.js"></script>
 
-        <script src="../ressources/js/page.js"></script>
-
         <link rel="stylesheet" href="../ressources/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="../ressources/bootstrap-icons/bootstrap-icons.min.css">
         <script src="../ressources/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -125,45 +123,68 @@
 
 <script src="../ressources/js/index.js"></script>
 <link rel="stylesheet" href="../ressources/css/pages/contact.css">
-
-<section class="contact-section">
+<body>
+    <section class="py-5 bg-transparent contact-section">
     <div class="container">
 
-        <h2 class="section-title text-center">Contact</h2>
-        <p class="contact-intro text-center">
+        <h2 class="text-center mb-4">Contact</h2>
+        <p class="text-center mb-5">
             N’hésitez pas à me contacter pour un projet, un stage ou toute question.
         </p>
 
-        <div class="contact-card mx-auto">
-            <ul class="contact-list">
-                <li>
-                    <i class="bi bi-envelope-fill"></i>
-                    <span>Email</span>
-                    <a href="mailto:mathyscapo974@gmail.com">
-                        mathyscapo974@gmail.com
-                    </a>
-                </li>
+        <div class="row justify-content-center">
+            
+            <!-- Email Card -->
+            <div class="col-md-4 mb-4">
+                <div class="card text-center h-100 shadow-sm">
+                    <div class="card-body">
+                        <i class="bi bi-envelope-fill display-4 mb-3 text-primary"></i>
+                        <h5 class="card-title">Email</h5>
+                        <p class="card-text">
+                            <a href="mailto:mathyscapo974@gmail.com" class="text-decoration-none">
+                                mathyscapo974@gmail.com
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
 
-                <li>
-                    <i class="bi bi-linkedin"></i>
-                    <span>LinkedIn</span>
-                    <a href="https://www.linkedin.com/in/mathyscapo/" target="_blank">
-                        https://www.linkedin.com/in/mathyscapo/
-                    </a>
-                </li>
+            <!-- LinkedIn Card -->
+            <div class="col-md-4 mb-4">
+                <div class="card text-center h-100 shadow-sm">
+                    <div class="card-body">
+                        <i class="bi bi-linkedin display-4 mb-3 text-info"></i>
+                        <h5 class="card-title">LinkedIn</h5>
+                        <p class="card-text">
+                            <a href="https://www.linkedin.com/in/mathyscapo/" target="_blank" class="text-decoration-none">
+                                https://www.linkedin.com/in/mathyscapo/
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
 
-                <li>
-                    <i class="bi bi-github"></i>
-                    <span>GitLab</span>
-                    <a href="https://gitlabinfo.iutmontp.univ-montp2.fr/capom" target="_blank">
-                        https://gitlabinfo.iutmontp.univ-montp2.fr/capom
-                    </a>
-                </li>
-            </ul>
+            <!-- GitLab Card -->
+            <div class="col-md-4 mb-4">
+                <div class="card text-center h-100 shadow-sm">
+                    <div class="card-body">
+                        <i class="bi bi-github display-4 mb-3 text-dark"></i>
+                        <h5 class="card-title">GitLab</h5>
+                        <p class="card-text">
+                            <a href="https://gitlabinfo.iutmontp.univ-montp2.fr/capom" target="_blank" class="text-decoration-none">
+                                https://gitlabinfo.iutmontp.univ-montp2.fr/capom
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
     </div>
-</section>
+</section>  
+</body>
+
 
 
 <hr class="footer-separator"/>

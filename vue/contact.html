@@ -6,42 +6,65 @@ waves: true
 ---
 <script src="../ressources/js/index.js"></script>
 <link rel="stylesheet" href="../ressources/css/pages/contact.css">
-
-<section class="contact-section">
+<body>
+    <section class="py-5 bg-transparent contact-section">
     <div class="container">
 
-        <h2 class="section-title text-center">Contact</h2>
-        <p class="contact-intro text-center">
+        <h2 class="text-center mb-4">Contact</h2>
+        <p class="text-center mb-5">
             N’hésitez pas à me contacter pour un projet, un stage ou toute question.
         </p>
 
-        <div class="contact-card mx-auto">
-            <ul class="contact-list">
-                <li>
-                    <i class="bi bi-envelope-fill"></i>
-                    <span>Email</span>
-                    <a href="mailto:{{site.data.information.mail.url}}">
-                        {{site.data.information.mail.url}}
-                    </a>
-                </li>
+        <div class="row justify-content-center">
+            
+            <!-- Email Card -->
+            <div class="col-md-4 mb-4">
+                <div class="card text-center h-100 shadow-sm">
+                    <div class="card-body">
+                        <i class="bi bi-envelope-fill display-4 mb-3 text-primary"></i>
+                        <h5 class="card-title">Email</h5>
+                        <p class="card-text">
+                            <a href="mailto:{{site.data.information.mail.url}}" class="text-decoration-none">
+                                {{site.data.information.mail.url}}
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
 
-                <li>
-                    <i class="bi bi-linkedin"></i>
-                    <span>LinkedIn</span>
-                    <a href="{{site.data.information.linkedin.url}}" target="_blank">
-                        {{site.data.information.linkedin.url}}
-                    </a>
-                </li>
+            <!-- LinkedIn Card -->
+            <div class="col-md-4 mb-4">
+                <div class="card text-center h-100 shadow-sm">
+                    <div class="card-body">
+                        <i class="bi bi-linkedin display-4 mb-3 text-info"></i>
+                        <h5 class="card-title">LinkedIn</h5>
+                        <p class="card-text">
+                            <a href="{{site.data.information.linkedin.url}}" target="_blank" class="text-decoration-none">
+                                {{site.data.information.linkedin.url}}
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
 
-                <li>
-                    <i class="bi bi-github"></i>
-                    <span>GitLab</span>
-                    <a href="{{site.data.information.gitlab.url}}" target="_blank">
-                        {{site.data.information.gitlab.url}}
-                    </a>
-                </li>
-            </ul>
+            <!-- GitLab Card -->
+            <div class="col-md-4 mb-4">
+                <div class="card text-center h-100 shadow-sm">
+                    <div class="card-body">
+                        <i class="bi bi-github display-4 mb-3 text-dark"></i>
+                        <h5 class="card-title">GitLab</h5>
+                        <p class="card-text">
+                            <a href="{{site.data.information.gitlab.url}}" target="_blank" class="text-decoration-none">
+                                {{site.data.information.gitlab.url}}
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
     </div>
-</section>
+</section>  
+</body>
+
