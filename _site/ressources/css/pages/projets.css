@@ -1,0 +1,20 @@
+.projets {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.projet-item {
+  border-radius: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projet-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(82, 99, 254, 0.15);
+}
+
+.projets_img {
+  width: 100%;
+  border-radius: 16px;
+}

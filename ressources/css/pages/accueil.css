@@ -1,0 +1,157 @@
+#content_accueil {
+  position: relative;
+}
+
+/* =========================
+   CARTES PROJETS
+========================= */
+
+#projets .projet {
+  height: 350px;
+  border: 1px solid var(--white);
+  border-radius: 20px;
+  overflow: hidden; /* IMPORTANT */
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+}
+
+/* Zoom carte */
+#projets .projet:hover {
+  transform: scale(1.05);
+}
+
+/* =========================
+   IMAGE DE FOND (pseudo-élément)
+========================= */
+
+#projets .projet::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.5s ease;
+  z-index: 1;
+}
+
+/* Apparition image */
+#projets .projet:hover::before {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* Images par projet */
+#projet_num1 .projet::before {
+  background-image: url('../img/orthoapparat.png');
+}
+
+#projet_num2 .projet::before {
+  background-image: url('../img/jeudelavie.gif');
+}
+
+#projet_num3 .projet::before {
+  background-image: url('../img/trellotrolle.png');
+}
+
+/* =========================
+   CONTENU TEXTE
+========================= */
+
+#projets .projet .content {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  padding: 20px;
+  color: var(--white);
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 20px;
+  transition: opacity 0.3s ease;
+}
+
+/* Masquer texte au hover */
+#projets .projet:hover .content {
+  opacity: 0;
+}
+
+/* =========================
+   NUMÉRO
+========================= */
+
+#projets .numero {
+  color: var(--white);
+  background-color: var(--black);
+  height: 35px;
+  width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 1rem;
+}
+
+/* =========================
+   TYPE
+========================= */
+
+#projets .type {
+  font-size: 0.9rem;
+}
+
+/* Styles spécifiques */
+#projet_num2:hover .type,
+#projet_num3:hover .type {
+  background-color: var(--white);
+  color: var(--black);
+  border: 1px solid var(--black);
+}
+
+
+/* =========================
+   FLÈCHE DE SCROLL
+========================= */
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
+}
+
+.scroll-indicator span {
+  display: block;
+  width: 26px;
+  height: 26px;
+  border-right: 3px solid white;
+  border-bottom: 3px solid white;
+  transform: rotate(45deg);
+  animation: scrollBounce 1.5s infinite;
+}
+
+
+.scroll-indicator a {
+  display: block;
+  width: 30px;
+  height: 50px;
+}
+
+
+/* Animation */
+@keyframes scrollBounce {
+  0% {
+    transform: rotate(45deg) translate(0, 0);
+    opacity: 1;
+  }
+  50% {
+    transform: rotate(45deg) translate(0, 10px);
+    opacity: 0.6;
+  }
+  100% {
+    transform: rotate(45deg) translate(0, 0);
+    opacity: 1;
+  }
+}
+

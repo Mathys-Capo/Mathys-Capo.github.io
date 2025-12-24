@@ -3,10 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <link rel="stylesheet" href="../ressources/css/styles.css">
         
-
         <title>Mon CV</title>
         <link rel="icon" href="../ressources/img/logo.png" />
 
@@ -15,55 +12,102 @@
 
         <script src="../ressources/js/page.js"></script>
 
-        
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"> 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>       
+        <link rel="stylesheet" href="../ressources/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../ressources/bootstrap-icons/bootstrap-icons.min.css">
+        <script src="../ressources/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+        <link rel="stylesheet" href="../ressources/css/main.css">
+
     </head>
     
     <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="../../ressources/img/logo.png" alt="Logo" style="height: 40px;">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    
-                    <li class="nav-item">
-                        <button onclick='window.location.href = "/"' class="btn btn-outline-primary rounded-pill nav-link text-white">Accueil</button>
-                    </li>
-                    
-                    <li class="nav-item">
-                        <button onclick='window.location.href = "/competences/"' class="btn btn-outline-primary rounded-pill nav-link text-white">Compétence</button>
-                    </li>
-                    
-                    <li class="nav-item">
-                        <button onclick='window.location.href = "/Portfolio d’apprentissage pour le BUT/"' class="btn btn-outline-primary rounded-pill nav-link text-white">Portfolio d’apprentissage</button>
-                    </li>
-                    
-                    <li class="nav-item">
-                        <button onclick='window.location.href = "/projets/"' class="btn btn-outline-primary rounded-pill nav-link text-white">Projets</button>
-                    </li>
-                    
-                    <li class="nav-item">
-                        <button onclick='window.location.href = "/contact/"' class="btn btn-outline-primary rounded-pill nav-link text-white">Contact</button>
-                    </li>
-                    
-                </ul>
-            </div>
-        </div>
-    </nav>
-    
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">
+      <img src="../../ressources/img/logo.png" alt="Logo" style="height: 40px;">
+    </a>
 
-    <div class="wave">
-        <img src="../ressources/img/bg-wave/wave1.png" id="wave1"/>
-        <img src="../ressources/img/bg-wave/wave2.png" id="wave2"/>
-        <img src="../ressources/img/bg-wave/wave3.png" id="wave3"/>
-        <img src="../ressources/img/bg-wave/wave4.png" id="wave4"/>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+
+        
+          
+            <!-- Item simple -->
+            <li class="nav-item">
+              <a class="nav-link text-white" href="/">
+                Accueil
+              </a>
+            </li>
+          
+        
+          
+            <!-- Item simple -->
+            <li class="nav-item">
+              <a class="nav-link text-white" href="/projets/">
+                Projets
+              </a>
+            </li>
+          
+        
+          
+            <!-- Item avec sous-menu -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-white"
+                href="/fun/"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Fun
+              </a>
+
+              <ul class="dropdown-menu dropdown-menu-dark">
+                
+                  <li>
+                    <a class="dropdown-item" href="/fun/fact">
+                      Fact
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-item" href="/fun/carte">
+                      Cartes
+                    </a>
+                  </li>
+                
+              </ul>
+            </li>
+          
+        
+          
+            <!-- Item simple -->
+            <li class="nav-item">
+              <a class="nav-link text-white" href="/contact/">
+                Contact
+              </a>
+            </li>
+          
+        
+
+      </ul>
     </div>
+  </div>
+</nav>
+
+
+    
 
        
 
@@ -75,29 +119,30 @@
     </div> 
 </section>
 
-<hr largeur="100%"/>
-<footer class="bg-dark text-center text-white py-4">
-  <div>
-      <h2 class="text-primary">Portfolio de Mathys CAPO</h2>
-  </div>
-  <div id="imagesFooter" class="d-flex justify-content-center align-items-center mt-3 gap-4">
-      <a href="https://www.linkedin.com/in/mathyscapo/" target="_blank" class="text-primary fs-3">
-          <i class="bi bi-linkedin"></i>
-      </a>
-      <a href="mailto:mathys.capo@etu.umontpellier.fr" class="text-primary fs-3">
-          <i class="bi bi-envelope-fill"></i>
-      </a>
-      <a href="https://gitlabinfo.iutmontp.univ-montp2.fr/capom" target="_blank" class="text-primary fs-3">
-          <i class="bi bi-github"></i>
-      </a>
-  </div>
+<hr class="footer-separator"/>
+
+<footer class="footer text-center">
+    <div class="container">
+
+        <h2>Portfolio de Mathys CAPO</h2>
+
+        <p class="footer-role">
+            Développeur Web · Étudiant en informatique
+        </p>
+
+        <div id="imagesFooter" class="d-flex justify-content-center gap-4 mt-4">
+            <a href="https://www.linkedin.com/in/mathyscapo/" target="_blank" aria-label="LinkedIn">
+                <i class="bi bi-linkedin"></i>
+            </a>
+
+            <a href="https://gitlabinfo.iutmontp.univ-montp2.fr/capom" target="_blank" aria-label="GitHub">
+                <i class="bi bi-github"></i>
+            </a>
+        </div>
+
+        <p class="footer-copy mt-4">
+            © 2025 Mathys Capo
+        </p>
+
+    </div>
 </footer>
-
-  
-<div id="endpage"></div>
-
-
-
-</html>
-
-

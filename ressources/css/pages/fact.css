@@ -1,0 +1,31 @@
+.funfact-section {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+.funfact-section {
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.fact-card {
+  background-color: var(--black);
+  border: 1px solid var(--blue);
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 600px;
+}
+
+#new-fact-btn {
+  cursor: pointer;
+}

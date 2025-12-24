@@ -1,45 +1,39 @@
-const screenWidth = window.innerWidth;
-const screenHeight = window.innerHeight;
+const waveConfigs = [
+  { id: '#wave1', ampX: 60, ampY: 12, rot: 0.4, duration: 18000, delay: 0, phase: 1 },
+  { id: '#wave2', ampX: 90, ampY: 16, rot: 0.5, duration: 22000, delay: 800, phase: 1 },
+  { id: '#wave3', ampX: 120, ampY: 20, rot: 0.6, duration: 26000, delay: 1600, phase: 1 },
+  { id: '#wave4', ampX: 150, ampY: 24, rot: 0.7, duration: 30000, delay: 2400, phase: 1 },
 
+  { id: '#wave1_reverse', ampX: 60, ampY: 12, rot: 0.4, duration: 18000, delay: 0, phase: -1 },
+  { id: '#wave2_reverse', ampX: 90, ampY: 16, rot: 0.5, duration: 22000, delay: 800, phase: -1 },
+  { id: '#wave3_reverse', ampX: 120, ampY: 20, rot: 0.6, duration: 26000, delay: 1600, phase: -1 },
+  { id: '#wave4_reverse', ampX: 150, ampY: 24, rot: 0.7, duration: 30000, delay: 2400, phase: -1 }
+];
 
-let var_translateY=20;
-let var_translateX=20;
-let var_delay=50;
-anime({
-    targets: '#wave1',
-    translateY: var_translateY,
-    translateX: var_translateX,
-    direction: 'alternate',
-    loop: true,
-    easing: 'linear'
-  });
+waveConfigs.forEach((wave) => {
   anime({
-    targets: '#wave2',
-    translateY: var_translateY,
-    translateX: var_translateX,
-    direction: 'alternate',
-    loop: true,
-    easing: 'linear',
-    delay: var_delay
-  });
-  anime({
-    targets: '#wave3',
-    translateY: var_translateY,
-    translateX: var_translateX,
-    direction: 'alternate',
-    loop: true,
-    easing: 'linear',
-    delay: var_delay*2
-  });
-  anime({
-    targets: '#wave4',
-    translateY: var_translateY,
-    translateX: var_translateX,
-    direction: 'alternate',
-    loop: true,
-    easing: 'linear',
-    delay: var_delay*3
-  });
+    targets: wave.id,
 
+    // On compense le scaleX(-1) CSS :
+    translateX: [
+      { value: wave.ampX * wave.phase * -1 }, // mirror compensation
+      { value: -wave.ampX * wave.phase * -1 }
+    ],
 
+    translateY: [
+      { value: wave.ampY * wave.phase },
+      { value: -wave.ampY * wave.phase }
+    ],
 
+    rotate: [
+      { value: wave.rot * wave.phase },
+      { value: -wave.rot * wave.phase }
+    ],
+
+    easing: 'easeInOutSine',
+    duration: wave.duration,
+    delay: wave.delay,
+    direction: 'alternate',
+    loop: true
+  });
+});

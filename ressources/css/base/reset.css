@@ -1,0 +1,14 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Red Hat Display', sans-serif;
+  background-color: #000 !important;
+  color: var(--white);
+}
+
+a {
+  text-decoration: none;
+}

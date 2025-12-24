@@ -1,84 +1,87 @@
 ---
 layout: layout_basic
 title: Page d'accueil
+waves: true
 ---
-<link rel="stylesheet" href="../ressources/css/accueil.css">
+
 <script src="./ressources/js/index.js"></script>
+<link rel="stylesheet" href="../ressources/css/pages/index.css">
 
-<body>
-    <section id="content_accueil" class="container text-white d-flex flex-column justify-content-center vh-100">
-        <div>
-            <h1 class="titre_accueil text-center">
-                Salut, moi c’est {{ site.data.information.prenom }} {{ site.data.information.name }} <br>
-                {{ site.data.information.etude }}
-            </h1>
-        </div>
-        <div class="mt-4 text-center">
-            <h3>{{ site.data.information.complement }}</h3>
-            <p id="signification">{{ site.data.information.signification }}</p>
-        </div>
-        <div class="text-center mt-4">
-            <a href="./ressources/pdf/cv.pdf" download="CV-CAPO-Mathys.pdf">
-                <button class="btn btn-primary btn-lg">Télécharger mon CV</button>
-            </a>
-        </div>
-    </section>
+<section id="content_accueil"
+  class="container text-white d-flex flex-column justify-content-center vh-100">
 
-    <section id="accueil_projets" class="container mt-5 text-white">
-        <div id="description" class="bg-secondary bg-opacity-20 rounded p-4">
-            <h1 class="text-primary">A PROPOS</h1>
-            <h2>Qui suis-je ?</h2>
-            <p>
-                Je m’appelle Mathys, j’ai 20 ans. Passionné par le développement web et les nouvelles technologies, 
-                j’aime concevoir des interfaces modernes et intuitives. Curieux et rigoureux, je cherche toujours à apprendre 
-                et à améliorer mes compétences en programmation.
-            </p>
+  <h1 class="titre_accueil text-center">
+    Salut, moi c’est {{ site.data.information.prenom }} {{ site.data.information.name }}
+  </h1>
 
-            <div class="card-body">
-                <h5 class="card-title text-primary">Mon projet professionnel</h5>
-                <p class="card-text">Après l’obtention de mon BUT, je souhaite poursuivre mes études en intégrant une école à Lyon pour suivre un master ou une formation d’ingénieur en informatique. Bien que je n’aie pas un rêve précis, ma passion pour ce domaine me pousse à approfondir mes compétences et à explorer différents champs comme le développement, les systèmes ou l’intelligence artificielle. Mon objectif est de contribuer à des projets innovants, tout en continuant à apprendre et à évoluer dans ce domaine qui m’inspire au quotidien.</p>
-            </div>
+  <div class="mt-4 text-center">
+    <h3>{{ site.data.information.complement }}</h3>
+    <p id="signification">{{ site.data.information.signification }}</p>
+  </div>
 
-        </div>        
-    
-        <div id="projets" class="row mt-5 g-4">
-            <div id="projet_num1" class="col-md-4">
-                <div class="projet position-relative">
-                    <div class="content p-4 d-flex flex-column justify-content-between h-100">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <p class="numero">01</p>
-                            <p class="type badge bg-light text-dark">Développement Web</p>
-                        </div>
-                        <h3>Traducteur en orthographe d’Apparat</h3>
-                        <p>L’orthographe d’apparat est un projet de complexification de l’orthographe française...</p>
-                    </div>
-                </div>
-            </div>
-            <div id="projet_num2" class="col-md-4">
-                <div class="projet position-relative">
-                    <div class="content p-4 d-flex flex-column justify-content-between h-100">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <p class="numero">02</p>
-                            <p class="type badge bg-light text-dark">Développement Web</p>
-                        </div>
-                        <h3>Jeu de la vie JS</h3>
-                        <p>Le Jeu de la Vie est un automate cellulaire développé par John Conway en 1970</p>
-                    </div>
-                </div>
-            </div>
-            <div id="projet_num3" class="col-md-4">
-                <div class="projet position-relative">
-                    <div class="content p-4 d-flex flex-column justify-content-between h-100">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <p class="numero">03</p>
-                            <p class="type badge bg-light text-dark">Développement Web</p>
-                        </div>
-                        <h3>Site Internet</h3>
-                        <p>Il s’agit d’une réalisation qui doit correspondre aux besoins spécifiques d’un client...</p>
-                    </div>
-                </div>
-            </div>
+  <div class="text-center mt-4">
+    <a href="./ressources/pdf/cv.pdf" download="CV-CAPO-Mathys.pdf"
+       class="btn btn-primary btn-lg">
+      Télécharger mon CV
+    </a>
+  </div>
+
+  <div class="scroll-indicator">
+    <a href="#accueil_projets" aria-label="Descendre">
+      <span></span>
+    </a>
+  </div>
+</section>
+
+<section id="accueil_projets" class="container mt-5 text-white">
+
+  <div id="description" class="bg-secondary bg-opacity-20 rounded p-4 mb-5">
+    <h1 class="text-primary">À PROPOS</h1>
+    <h2>Qui suis-je ?</h2>
+    <p>Je m’appelle Mathys, j’ai 20 ans...</p>
+  </div>
+
+  <div class="row g-4">
+
+  <div class="col-md-4">
+    <div class="projet position-relative" id="projet_num1">
+      <div class="content p-4 d-flex flex-column justify-content-between h-100">
+        <div class="d-flex justify-content-between align-items-center">
+          <p class="numero">01</p>
+          <p class="type badge bg-light text-dark">Développement Web</p>
         </div>
-    </section>
-    
-</body>
+        <h3>Traducteur en orthographe d’Apparat</h3>
+        <p>L’orthographe d’apparat est un language qui est une satire de la langue française que j'ai réaliser en JAVA...</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="projet position-relative" id="projet_num2">
+      <div class="content p-4 d-flex flex-column justify-content-between h-100">
+        <div class="d-flex justify-content-between align-items-center">
+          <p class="numero">02</p>
+          <p class="type badge bg-light text-dark">Développement Web</p>
+        </div>
+        <h3>Jeu de la vie JS</h3>
+        <p>Automate cellulaire développé par John Conway.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="projet position-relative" id="projet_num3">
+      <div class="content p-4 d-flex flex-column justify-content-between h-100">
+        <div class="d-flex justify-content-between align-items-center">
+          <p class="numero">03</p>
+          <p class="type badge bg-light text-dark">Développement Web</p>
+        </div>
+        <h3>Site Internet</h3>
+        <p>Réalisation répondant aux besoins d’un client.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</section>

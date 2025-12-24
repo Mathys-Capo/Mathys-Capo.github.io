@@ -1,0 +1,70 @@
+.projet {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 350px; /* fixe la taille de la carte */
+  background-color: rgba(255,255,255,0.04);
+  border: 1px solid rgba(82, 99, 254, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Contenu texte */
+.projet .content {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  padding: 20px;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: opacity 0.3s ease;
+  background-color: rgba(0,0,0,0.7);
+  border-radius: 20px;
+}
+
+/* Image en overlay */
+.projet::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.4s ease, transform 0.5s ease;
+  z-index: 1;
+}
+
+/* Affiche l'image au hover */
+.projet:hover::before {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* Masquer texte au hover */
+.projet:hover .content {
+  opacity: 0;
+}
+
+/* Images par projet */
+#projet_num1::before { background-image: url('../../../ressources/img/orthoapparat.png'); }
+#projet_num2::before { background-image: url('../../../ressources/img/jeudelavie.gif'); }
+#projet_num3::before { background-image: url('../../../ressources/img/trellotrolle.png'); }
+
+/* Numéro */
+.numero {
+  color: var(--white);
+  background-color: var(--black);
+  height: 35px;
+  width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 1rem;
+}
+
+/* Badge type */
+.type {
+  font-size: 0.9rem;
+}

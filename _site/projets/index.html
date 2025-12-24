@@ -3,10 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <link rel="stylesheet" href="../ressources/css/styles.css">
         
-
         <title>Mes travaux</title>
         <link rel="icon" href="../ressources/img/logo.png" />
 
@@ -15,537 +12,232 @@
 
         <script src="../ressources/js/page.js"></script>
 
-        
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"> 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>       
+        <link rel="stylesheet" href="../ressources/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../ressources/bootstrap-icons/bootstrap-icons.min.css">
+        <script src="../ressources/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+        <link rel="stylesheet" href="../ressources/css/main.css">
+
     </head>
     
     <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="../../ressources/img/logo.png" alt="Logo" style="height: 40px;">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    
-                    <li class="nav-item">
-                        <button onclick='window.location.href = "/"' class="btn btn-outline-primary rounded-pill nav-link text-white">Accueil</button>
-                    </li>
-                    
-                    <li class="nav-item">
-                        <button onclick='window.location.href = "/competences/"' class="btn btn-outline-primary rounded-pill nav-link text-white">Compétence</button>
-                    </li>
-                    
-                    <li class="nav-item">
-                        <button onclick='window.location.href = "/Portfolio d’apprentissage pour le BUT/"' class="btn btn-outline-primary rounded-pill nav-link text-white">Portfolio d’apprentissage</button>
-                    </li>
-                    
-                    <li class="nav-item">
-                        <button onclick='window.location.href = "/projets/"' class="btn btn-outline-primary rounded-pill nav-link text-white">Projets</button>
-                    </li>
-                    
-                    <li class="nav-item">
-                        <button onclick='window.location.href = "/contact/"' class="btn btn-outline-primary rounded-pill nav-link text-white">Contact</button>
-                    </li>
-                    
-                </ul>
-            </div>
-        </div>
-    </nav>
-    
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">
+      <img src="../../ressources/img/logo.png" alt="Logo" style="height: 40px;">
+    </a>
 
-    <div class="wave">
-        <img src="../ressources/img/bg-wave/wave1.png" id="wave1"/>
-        <img src="../ressources/img/bg-wave/wave2.png" id="wave2"/>
-        <img src="../ressources/img/bg-wave/wave3.png" id="wave3"/>
-        <img src="../ressources/img/bg-wave/wave4.png" id="wave4"/>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+
+        
+          
+            <!-- Item simple -->
+            <li class="nav-item">
+              <a class="nav-link text-white" href="/">
+                Accueil
+              </a>
+            </li>
+          
+        
+          
+            <!-- Item simple -->
+            <li class="nav-item">
+              <a class="nav-link text-white" href="/projets/">
+                Projets
+              </a>
+            </li>
+          
+        
+          
+            <!-- Item avec sous-menu -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-white"
+                href="/fun/"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Fun
+              </a>
+
+              <ul class="dropdown-menu dropdown-menu-dark">
+                
+                  <li>
+                    <a class="dropdown-item" href="/fun/fact">
+                      Fact
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="dropdown-item" href="/fun/carte">
+                      Cartes
+                    </a>
+                  </li>
+                
+              </ul>
+            </li>
+          
+        
+          
+            <!-- Item simple -->
+            <li class="nav-item">
+              <a class="nav-link text-white" href="/contact/">
+                Contact
+              </a>
+            </li>
+          
+        
+
+      </ul>
     </div>
+  </div>
+</nav>
+
+
+    
 
        
 
 <script src="../ressources/js/projets.js"></script>
-<link rel="stylesheet" href="../ressources/css/projets.css"> 
+<link rel="stylesheet" href="../ressources/css/pages/projets.css">
 
 <section class="content_general pt-5">
-    <h2 class="section-title text-center text-primary mb-5 pt-5">Mes Projets</h2>
+    <h2 class="section-title text-center mb-5 pt-5">Mes Projets</h2>
 
-    <div class="projets">
+    <div class="projets container">
         
-        
-            <div class="projet-item mb-5 bg-secondary bg-opacity-70" id="Traducteur">
-                <h3 class="projet-title text-uppercase text-dark">Traducteur en orthographe d’Apparat - PERSONNEL</h3>
-                <div class="row align-items-center">
-                    <div class="col-sm-4 ">
-                        <a href="#" class="work__img">
-                            <img class="projets_img img-fluid rounded shadow-lg" src="../ressources/img/orthoapparat.png" alt="Traducteur en orthographe d’Apparat - PERSONNEL">
-                        </a>
+            <article class="projet-item" id="Traducteur">
+                <h3 class="projet-title">Traducteur en orthographe d’Apparat - PERSONNEL</h3>
+
+                <div class="row align-items-center g-4">
+                    <div class="col-md-5 ">
+                        <img class="projets_img" src="../ressources/img/orthoapparat.png" alt="Traducteur en orthographe d’Apparat - PERSONNEL">
                     </div>
-                    <div class="col-sm-8">
+
+                    <div class="col-md-7">
                         <div class="projet-description">
                             
-                                <p>L’orthographe d’apparat est un projet de complexification de l’orthographe française volontairement peu intelligible créé en 1977 par le collège de Pataphysique. Cette orthographe est une satire de la langue française, souvent difficile à comparer à d’autres langues comme le Turc ou l’Allemand, qui s’écrivent comme elles se prononcent. J’ai donc créé un algorithme qui permet la traduction en orthographe d’apparat, avec une alerte concernant les particularités phonétiques. Ce projet personnel a été réalisé en moins d’un mois, sans contraintes de temps ou techniques particulières. J’ai travaillé seul pour concevoir, développer et tester cet outil. Pour concevoir cet algorithme, j’ai utilisé des approches méthodiques afin de garantir une traduction fidèle tout en tenant compte des particularités complexes de cette orthographe. Des exemples concrets de traduction sont disponibles pour illustrer les résultats obtenus. Ce projet m’a permis de développer des compétences variées, notamment dans la conception d’architectures adaptées, la formalisation des besoins utilisateurs, et la résolution de problèmes liés aux données textuelles.</p><br/>
+                                <p>L’orthographe d’apparat est un projet de complexification de l’orthographe française volontairement peu intelligible créé en 1977 par le collège de Pataphysique. Cette orthographe est une satire de la langue française, souvent difficile à comparer à d’autres langues comme le Turc ou l’Allemand, qui s’écrivent comme elles se prononcent. J’ai donc créé un algorithme qui permet la traduction en orthographe d’apparat, avec une alerte concernant les particularités phonétiques. Ce projet personnel a été réalisé en moins d’un mois, sans contraintes de temps ou techniques particulières. J’ai travaillé seul pour concevoir, développer et tester cet outil. Pour concevoir cet algorithme, j’ai utilisé des approches méthodiques afin de garantir une traduction fidèle tout en tenant compte des particularités complexes de cette orthographe. Des exemples concrets de traduction sont disponibles pour illustrer les résultats obtenus. Ce projet m’a permis de développer des compétences variées, notamment dans la conception d’architectures adaptées, la formalisation des besoins utilisateurs, et la résolution de problèmes liés aux données textuelles.</p>
                             
                         </div>
-
-                        <!-- Accordion with competences -->
-                        <div class="accordion accordion-flush" id="accordionFlush_1">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="heading1">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse_1" aria-expanded="false" aria-controls="flush-collapse_1">
-                                        Compétences BUT associés
-                                    </button>
-                                </h2>
-                                <div id="flush-collapse_1" class="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#accordionFlush_1">
-                                    <div class="accordion-body">
-                                        <div id="competences_1" class="competences">
-                                            <input class="search form-control mb-3" placeholder="Rechercher une compétence..." />
-                                            <ul class="list">
-                                                
-                                                
-                                                    <li data-id="1" class="list-group-item d-flex justify-content-between align-items-center">
-                                                        <h4 class="num text-primary">1. AC 1</h4>
-                                                        <p class="nom mb-0">Choisir et implémenter les architectures adaptées</p>
-                                                    </li>
-                                                    
-                                                
-                                                    <li data-id="2" class="list-group-item d-flex justify-content-between align-items-center">
-                                                        <h4 class="num text-primary">1. AC 3</h4>
-                                                        <p class="nom mb-0">Intégrer des solutions dans un environnement de production</p>
-                                                    </li>
-                                                    
-                                                
-                                                    <li data-id="3" class="list-group-item d-flex justify-content-between align-items-center">
-                                                        <h4 class="num text-primary">5. AC 2</h4>
-                                                        <p class="nom mb-0">Formaliser les besoins du client et de l’utilisateur</p>
-                                                    </li>
-                                                    
-                                                
-                                                    <li data-id="4" class="list-group-item d-flex justify-content-between align-items-center">
-                                                        <h4 class="num text-primary">5. AC 3</h4>
-                                                        <p class="nom mb-0">Identifier les critères de faisabilité d’un projet informatique</p>
-                                                    </li>
-                                                    
-                                                
-                                                    <li data-id="5" class="list-group-item d-flex justify-content-between align-items-center">
-                                                        <h4 class="num text-primary">4. AC 4</h4>
-                                                        <p class="nom mb-0">Manipuler des données hétérogènes</p>
-                                                    </li>
-                                                    
-                                                
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
-            </div>
-            <br>
-            
+            </article>
         
-            <div class="projet-item mb-5 bg-secondary bg-opacity-70" id="Site">
-                <h3 class="projet-title text-uppercase text-dark">Site Internet - ACADEMIQUE</h3>
-                <div class="row align-items-center">
-                    <div class="col-sm-4 order-last">
-                        <a href="#" class="work__img">
-                            <img class="projets_img img-fluid rounded shadow-lg" src="../ressources/img/siteprojet-edited.png" alt="Site Internet - ACADEMIQUE">
-                        </a>
+            <article class="projet-item" id="Site">
+                <h3 class="projet-title">Site Internet - ACADEMIQUE</h3>
+
+                <div class="row align-items-center g-4">
+                    <div class="col-md-5 order-md-last">
+                        <img class="projets_img" src="../ressources/img/siteprojet-edited.png" alt="Site Internet - ACADEMIQUE">
                     </div>
-                    <div class="col-sm-8">
+
+                    <div class="col-md-7">
                         <div class="projet-description">
                             
-                                <p>Il s’agit d’une réalisation qui doit répondre aux besoins spécifiques d’un client, ici un enseignant. Le site web devait permettre de gérer les inscriptions, les demandes de stage ou d’alternance, ainsi que d’autres fonctions liées à la gestion. Nous étions cinq étudiants sur ce projet, répartis en rôles bien définis. Mon rôle, en tant que Product Owner, consistait à assurer la communication entre le client et l’équipe technique. Ce projet académique s’est déroulé sur une période de quatre mois, organisée en sprints de deux semaines. Les objectifs incluaient la clarification des besoins du client, leur faisabilité technique, et la gestion des priorités pour garantir la satisfaction des attentes. Pour gérer ce projet, j’ai appliqué des méthodologies agiles, en veillant à une communication fluide avec le client et à la clarté des spécifications avant leur mise en œuvre. Des preuves comme des captures d’écran des interfaces et des classes PHP utilisées montrent les résultats obtenus. Les compétences développées incluent la gestion de projet agile, la communication avec le client, et l’intégration de solutions techniques adaptées. En tant que Product Owner, j’ai joué un rôle essentiel dans la coordination du projet et la gestion des livrables.</p><br/>
+                                <p>Il s’agit d’une réalisation qui doit répondre aux besoins spécifiques d’un client, ici un enseignant. Le site web devait permettre de gérer les inscriptions, les demandes de stage ou d’alternance, ainsi que d’autres fonctions liées à la gestion. Nous étions cinq étudiants sur ce projet, répartis en rôles bien définis. Mon rôle, en tant que Product Owner, consistait à assurer la communication entre le client et l’équipe technique. Ce projet académique s’est déroulé sur une période de quatre mois, organisée en sprints de deux semaines. Les objectifs incluaient la clarification des besoins du client, leur faisabilité technique, et la gestion des priorités pour garantir la satisfaction des attentes. Pour gérer ce projet, j’ai appliqué des méthodologies agiles, en veillant à une communication fluide avec le client et à la clarté des spécifications avant leur mise en œuvre. Des preuves comme des captures d’écran des interfaces et des classes PHP utilisées montrent les résultats obtenus. Les compétences développées incluent la gestion de projet agile, la communication avec le client, et l’intégration de solutions techniques adaptées. En tant que Product Owner, j’ai joué un rôle essentiel dans la coordination du projet et la gestion des livrables.</p>
                             
                         </div>
-
-                        <!-- Accordion with competences -->
-                        <div class="accordion accordion-flush" id="accordionFlush_2">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="heading2">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse_2" aria-expanded="false" aria-controls="flush-collapse_2">
-                                        Compétences BUT associés
-                                    </button>
-                                </h2>
-                                <div id="flush-collapse_2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#accordionFlush_2">
-                                    <div class="accordion-body">
-                                        <div id="competences_2" class="competences">
-                                            <input class="search form-control mb-3" placeholder="Rechercher une compétence..." />
-                                            <ul class="list">
-                                                
-                                                
-                                                    <li data-id="1" class="list-group-item d-flex justify-content-between align-items-center">
-                                                        <h4 class="num text-primary">1. AC 1</h4>
-                                                        <p class="nom mb-0">Choisir et implémenter les architectures adaptées</p>
-                                                    </li>
-                                                    
-                                                
-                                                    <li data-id="2" class="list-group-item d-flex justify-content-between align-items-center">
-                                                        <h4 class="num text-primary">1. AC 2</h4>
-                                                        <p class="nom mb-0">Faire évoluer une application existante</p>
-                                                    </li>
-                                                    
-                                                
-                                                    <li data-id="3" class="list-group-item d-flex justify-content-between align-items-center">
-                                                        <h4 class="num text-primary">1. AC 3</h4>
-                                                        <p class="nom mb-0">Intégrer des solutions dans un environnement de production</p>
-                                                    </li>
-                                                    
-                                                
-                                                    <li data-id="4" class="list-group-item d-flex justify-content-between align-items-center">
-                                                        <h4 class="num text-primary">2. AC 2</h4>
-                                                        <p class="nom mb-0">Profiler, analyser et justifier le comportement d’un code existant</p>
-                                                    </li>
-                                                    
-                                                
-                                                    <li data-id="5" class="list-group-item d-flex justify-content-between align-items-center">
-                                                        <h4 class="num text-primary">3. AC 3</h4>
-                                                        <p class="nom mb-0">Sécuriser les services et données d’un système</p>
-                                                    </li>
-                                                    
-                                                
-                                                    <li data-id="6" class="list-group-item d-flex justify-content-between align-items-center">
-                                                        <h4 class="num text-primary">4. AC 2</h4>
-                                                        <p class="nom mb-0">Assurer la confidentialité des données (intégrité et sécurité)</p>
-                                                    </li>
-                                                    
-                                                
-                                                    <li data-id="7" class="list-group-item d-flex justify-content-between align-items-center">
-                                                        <h4 class="num text-primary">5. AC 1</h4>
-                                                        <p class="nom mb-0">Identifier les processus présents dans une organisation en vue d’améliorer les systèmes d’information</p>
-                                                    </li>
-                                                    
-                                                
-                                                    <li data-id="8" class="list-group-item d-flex justify-content-between align-items-center">
-                                                        <h4 class="num text-primary">5. AC 2</h4>
-                                                        <p class="nom mb-0">Formaliser les besoins du client et de l’utilisateur</p>
-                                                    </li>
-                                                    
-                                                
-                                                    <li data-id="9" class="list-group-item d-flex justify-content-between align-items-center">
-                                                        <h4 class="num text-primary">5. AC 3</h4>
-                                                        <p class="nom mb-0">Identifier les critères de faisabilité d’un projet informatique</p>
-                                                    </li>
-                                                    
-                                                
-                                                    <li data-id="10" class="list-group-item d-flex justify-content-between align-items-center">
-                                                        <h4 class="num text-primary">5. AC 4</h4>
-                                                        <p class="nom mb-0">Définir et mettre en œuvre une démarche de suivi de projet</p>
-                                                    </li>
-                                                    
-                                                
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
-            </div>
-            <br>
-            
+            </article>
         
-            <div class="projet-item mb-5 bg-secondary bg-opacity-70" id="JeuVie">
-                <h3 class="projet-title text-uppercase text-dark">Jeu de la vie JS - PERSONNEL</h3>
-                <div class="row align-items-center">
-                    <div class="col-sm-4 ">
-                        <a href="#" class="work__img">
-                            <img class="projets_img img-fluid rounded shadow-lg" src="../ressources/img/jeudelavie.gif" alt="Jeu de la vie JS - PERSONNEL">
-                        </a>
+            <article class="projet-item" id="JeuVie">
+                <h3 class="projet-title">Jeu de la vie JS - PERSONNEL</h3>
+
+                <div class="row align-items-center g-4">
+                    <div class="col-md-5 ">
+                        <img class="projets_img" src="../ressources/img/jeudelavie.gif" alt="Jeu de la vie JS - PERSONNEL">
                     </div>
-                    <div class="col-sm-8">
+
+                    <div class="col-md-7">
                         <div class="projet-description">
                             
-                                <p>Le Jeu de la Vie est un automate cellulaire développé par John Conway en 1970. Il se joue sur une grille bidimensionnelle où chaque cellule peut être vivante ou morte. Mon implémentation en JavaScript permet de visualiser cette évolution sur une grille interactive, divisée par deux pour améliorer la performance tout en conservant l’essence du jeu original. Ce projet personnel a été réalisé en collaboration avec une autre personne, sur une durée d’une semaine. L’objectif principal était de faire fonctionner le jeu tout en assurant une vitesse d’exécution optimale. Pour concevoir ce projet, j’ai travaillé sur l’optimisation de l’algorithme pour garantir une fluidité dans la simulation. Une démonstration sous forme de GIF illustre le fonctionnement et l’évolution des cellules sur la grille. Ce projet m’a permis de renforcer mes compétences en JavaScript, notamment en optimisation d’algorithmes et en gestion d’interfaces interactives. J’ai contribué à la conception de l’algorithme principal et participé au développement de l’interface utilisateur.</p><br/>
+                                <p>Le Jeu de la Vie est un automate cellulaire développé par John Conway en 1970. Il se joue sur une grille bidimensionnelle où chaque cellule peut être vivante ou morte. Mon implémentation en JavaScript permet de visualiser cette évolution sur une grille interactive, divisée par deux pour améliorer la performance tout en conservant l’essence du jeu original. Ce projet personnel a été réalisé en collaboration avec une autre personne, sur une durée d’une semaine. L’objectif principal était de faire fonctionner le jeu tout en assurant une vitesse d’exécution optimale. Pour concevoir ce projet, j’ai travaillé sur l’optimisation de l’algorithme pour garantir une fluidité dans la simulation. Une démonstration sous forme de GIF illustre le fonctionnement et l’évolution des cellules sur la grille. Ce projet m’a permis de renforcer mes compétences en JavaScript, notamment en optimisation d’algorithmes et en gestion d’interfaces interactives. J’ai contribué à la conception de l’algorithme principal et participé au développement de l’interface utilisateur.</p>
                             
                         </div>
-
-                        <!-- Accordion with competences -->
-                        <div class="accordion accordion-flush" id="accordionFlush_3">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="heading3">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse_3" aria-expanded="false" aria-controls="flush-collapse_3">
-                                        Compétences BUT associés
-                                    </button>
-                                </h2>
-                                <div id="flush-collapse_3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#accordionFlush_3">
-                                    <div class="accordion-body">
-                                        <div id="competences_3" class="competences">
-                                            <input class="search form-control mb-3" placeholder="Rechercher une compétence..." />
-                                            <ul class="list">
-                                                
-                                                
-                                                    <li data-id="1" class="list-group-item d-flex justify-content-between align-items-center">
-                                                        <h4 class="num text-primary">1. AC 1</h4>
-                                                        <p class="nom mb-0">Choisir et implémenter les architectures adaptées</p>
-                                                    </li>
-                                                    
-                                                
-                                                    <li data-id="2" class="list-group-item d-flex justify-content-between align-items-center">
-                                                        <h4 class="num text-primary">2. AC 1</h4>
-                                                        <p class="nom mb-0">Anticiper les résultats de diverses métriques (temps d’exécution, occupation mémoire…)</p>
-                                                    </li>
-                                                    
-                                                
-                                                    <li data-id="3" class="list-group-item d-flex justify-content-between align-items-center">
-                                                        <h4 class="num text-primary">5. AC 3</h4>
-                                                        <p class="nom mb-0">Identifier les critères de faisabilité d’un projet informatique</p>
-                                                    </li>
-                                                    
-                                                
-                                                    <li data-id="4" class="list-group-item d-flex justify-content-between align-items-center">
-                                                        <h4 class="num text-primary">5. AC 4</h4>
-                                                        <p class="nom mb-0">Définir et mettre en œuvre une démarche de suivi de projet</p>
-                                                    </li>
-                                                    
-                                                
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
-            </div>
-            <br>
-            
+            </article>
         
-            <div class="projet-item mb-5 bg-secondary bg-opacity-70" id="Trellotrolle">
-                <h3 class="projet-title text-uppercase text-dark">Trellotrolle - ACADEMIQUE</h3>
-                <div class="row align-items-center">
-                    <div class="col-sm-4 order-last">
-                        <a href="#" class="work__img">
-                            <img class="projets_img img-fluid rounded shadow-lg" src="../ressources/img/trellotrolle.png" alt="Trellotrolle - ACADEMIQUE">
-                        </a>
+            <article class="projet-item" id="Trellotrolle">
+                <h3 class="projet-title">Trellotrolle - ACADEMIQUE</h3>
+
+                <div class="row align-items-center g-4">
+                    <div class="col-md-5 order-md-last">
+                        <img class="projets_img" src="../ressources/img/trellotrolle.png" alt="Trellotrolle - ACADEMIQUE">
                     </div>
-                    <div class="col-sm-8">
+
+                    <div class="col-md-7">
                         <div class="projet-description">
                             
-                                <p>Ce projet consistait à repenser une application existante, initialement mal conçue, afin d’en améliorer l’efficacité et la fiabilité. L’objectif principal était d’analyser les failles et erreurs du projet, de revoir la conception de la base de données, et d’apporter des corrections au code. Nous étions cinq membres dans l’équipe et avons travaillé sur ce projet pendant quatre mois. Dans ce projet académique, nous avons utilisé une approche méthodique pour repenser la base de données et identifier les faiblesses du code existant. Chaque membre avait un rôle bien défini, et le travail collaboratif nous a permis d’améliorer significativement l’application. L’équipe a procédé à une analyse approfondie et a mis en œuvre des solutions efficaces. Des captures avant et après les modifications illustrent clairement les améliorations apportées. Mes contributions personnelles incluent l’analyse des failles, la correction des erreurs de programmation, et la participation à la refonte de la base de données. Ce projet m’a permis de développer des compétences en refonte et optimisation de systèmes existants, ainsi qu’en sécurisation et gestion des données.</p><br/>
+                                <p>Ce projet consistait à repenser une application existante, initialement mal conçue, afin d’en améliorer l’efficacité et la fiabilité. L’objectif principal était d’analyser les failles et erreurs du projet, de revoir la conception de la base de données, et d’apporter des corrections au code. Nous étions cinq membres dans l’équipe et avons travaillé sur ce projet pendant quatre mois. Dans ce projet académique, nous avons utilisé une approche méthodique pour repenser la base de données et identifier les faiblesses du code existant. Chaque membre avait un rôle bien défini, et le travail collaboratif nous a permis d’améliorer significativement l’application. L’équipe a procédé à une analyse approfondie et a mis en œuvre des solutions efficaces. Des captures avant et après les modifications illustrent clairement les améliorations apportées. Mes contributions personnelles incluent l’analyse des failles, la correction des erreurs de programmation, et la participation à la refonte de la base de données. Ce projet m’a permis de développer des compétences en refonte et optimisation de systèmes existants, ainsi qu’en sécurisation et gestion des données.</p>
                             
                         </div>
-
-                        <!-- Accordion with competences -->
-                        <div class="accordion accordion-flush" id="accordionFlush_4">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="heading4">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse_4" aria-expanded="false" aria-controls="flush-collapse_4">
-                                        Compétences BUT associés
-                                    </button>
-                                </h2>
-                                <div id="flush-collapse_4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionFlush_4">
-                                    <div class="accordion-body">
-                                        <div id="competences_4" class="competences">
-                                            <input class="search form-control mb-3" placeholder="Rechercher une compétence..." />
-                                            <ul class="list">
-                                                
-                                                
-                                                    <li data-id="1" class="list-group-item d-flex justify-content-between align-items-center">
-                                                        <h4 class="num text-primary">1. AC 1</h4>
-                                                        <p class="nom mb-0">Choisir et implémenter les architectures adaptées</p>
-                                                    </li>
-                                                    
-                                                
-                                                    <li data-id="2" class="list-group-item d-flex justify-content-between align-items-center">
-                                                        <h4 class="num text-primary">1. AC 2</h4>
-                                                        <p class="nom mb-0">Faire évoluer une application existante</p>
-                                                    </li>
-                                                    
-                                                
-                                                    <li data-id="3" class="list-group-item d-flex justify-content-between align-items-center">
-                                                        <h4 class="num text-primary">1. AC 1</h4>
-                                                        <p class="nom mb-0">Concevoir et développer des applications communicantes</p>
-                                                    </li>
-                                                    
-                                                
-                                                    <li data-id="4" class="list-group-item d-flex justify-content-between align-items-center">
-                                                        <h4 class="num text-primary">2. AC 1</h4>
-                                                        <p class="nom mb-0">Anticiper les résultats de diverses métriques (temps d’exécution, occupation mémoire…)</p>
-                                                    </li>
-                                                    
-                                                
-                                                    <li data-id="5" class="list-group-item d-flex justify-content-between align-items-center">
-                                                        <h4 class="num text-primary">2. AC 2</h4>
-                                                        <p class="nom mb-0">Profiler, analyser et justifier le comportement d’un code existant</p>
-                                                    </li>
-                                                    
-                                                
-                                                    <li data-id="6" class="list-group-item d-flex justify-content-between align-items-center">
-                                                        <h4 class="num text-primary">3. AC 3</h4>
-                                                        <p class="nom mb-0">Sécuriser les services et données d’un système</p>
-                                                    </li>
-                                                    
-                                                
-                                                    <li data-id="7" class="list-group-item d-flex justify-content-between align-items-center">
-                                                        <h4 class="num text-primary">4. AC 1</h4>
-                                                        <p class="nom mb-0">Optimiser les modèles de données de l’entreprise</p>
-                                                    </li>
-                                                    
-                                                
-                                                    <li data-id="8" class="list-group-item d-flex justify-content-between align-items-center">
-                                                        <h4 class="num text-primary">4. AC 2</h4>
-                                                        <p class="nom mb-0">Assurer la confidentialité des données (intégrité et sécurité)</p>
-                                                    </li>
-                                                    
-                                                
-                                                    <li data-id="9" class="list-group-item d-flex justify-content-between align-items-center">
-                                                        <h4 class="num text-primary">4. AC 4</h4>
-                                                        <p class="nom mb-0">Manipuler des données hétérogènes</p>
-                                                    </li>
-                                                    
-                                                
-                                                    <li data-id="10" class="list-group-item d-flex justify-content-between align-items-center">
-                                                        <h4 class="num text-primary">5. AC 1</h4>
-                                                        <p class="nom mb-0">Identifier les processus présents dans une organisation en vue d’améliorer les systèmes d’information</p>
-                                                    </li>
-                                                    
-                                                
-                                                    <li data-id="11" class="list-group-item d-flex justify-content-between align-items-center">
-                                                        <h4 class="num text-primary">5. AC 4</h4>
-                                                        <p class="nom mb-0">Définir et mettre en œuvre une démarche de suivi de projet</p>
-                                                    </li>
-                                                    
-                                                
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
-            </div>
-            <br>
-            
+            </article>
         
-            <div class="projet-item mb-5 bg-secondary bg-opacity-70" id="volley">
-                <h3 class="projet-title text-uppercase text-dark">Club de volley en Vue - ACADEMIQUE</h3>
-                <div class="row align-items-center">
-                    <div class="col-sm-4 ">
-                        <a href="#" class="work__img">
-                            <img class="projets_img img-fluid rounded shadow-lg" src="../ressources/img/volleyClubFront.png" alt="Club de volley en Vue - ACADEMIQUE">
-                        </a>
+            <article class="projet-item" id="volley">
+                <h3 class="projet-title">Club de volley en Vue - ACADEMIQUE</h3>
+
+                <div class="row align-items-center g-4">
+                    <div class="col-md-5 ">
+                        <img class="projets_img" src="../ressources/img/volleyClubFront.png" alt="Club de volley en Vue - ACADEMIQUE">
                     </div>
-                    <div class="col-sm-8">
+
+                    <div class="col-md-7">
                         <div class="projet-description">
                             
-                                <p>Ce projet, réalisé en trois semaines en équipe de trois personnes, avait pour objectif de créer un site web simulant la gestion d’un club de volley. Après avoir développé une API en Symfony, nous avons conçu l’interface front-end avec Vue.js et Bootstrap pour offrir une expérience utilisateur moderne et intuitive. Le site permet de gérer les équipes et les clubs, répondant ainsi aux besoins simulés d’une organisation sportive. Ce projet est désormais terminé, et je suis particulièrement fier du résultat final, qui reflète un travail d’équipe efficace et une bonne maîtrise des technologies utilisées.</p><br/>
+                                <p>Ce projet, réalisé en trois semaines en équipe de trois personnes, avait pour objectif de créer un site web simulant la gestion d’un club de volley. Après avoir développé une API en Symfony, nous avons conçu l’interface front-end avec Vue.js et Bootstrap pour offrir une expérience utilisateur moderne et intuitive. Le site permet de gérer les équipes et les clubs, répondant ainsi aux besoins simulés d’une organisation sportive. Ce projet est désormais terminé, et je suis particulièrement fier du résultat final, qui reflète un travail d’équipe efficace et une bonne maîtrise des technologies utilisées.</p>
                             
                         </div>
-
-                        <!-- Accordion with competences -->
-                        <div class="accordion accordion-flush" id="accordionFlush_5">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="heading5">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse_5" aria-expanded="false" aria-controls="flush-collapse_5">
-                                        Compétences BUT associés
-                                    </button>
-                                </h2>
-                                <div id="flush-collapse_5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#accordionFlush_5">
-                                    <div class="accordion-body">
-                                        <div id="competences_5" class="competences">
-                                            <input class="search form-control mb-3" placeholder="Rechercher une compétence..." />
-                                            <ul class="list">
-                                                
-                                                
-                                                    <li data-id="1" class="list-group-item d-flex justify-content-between align-items-center">
-                                                        <h4 class="num text-primary">1. AC 1</h4>
-                                                        <p class="nom mb-0">Choisir et implémenter les architectures adaptées</p>
-                                                    </li>
-                                                    
-                                                
-                                                    <li data-id="2" class="list-group-item d-flex justify-content-between align-items-center">
-                                                        <h4 class="num text-primary">2. AC 2</h4>
-                                                        <p class="nom mb-0">Profiler, analyser et justifier le comportement d'un code existant</p>
-                                                    </li>
-                                                    
-                                                
-                                                    <li data-id="3" class="list-group-item d-flex justify-content-between align-items-center">
-                                                        <h4 class="num text-primary">2. AC 3</h4>
-                                                        <p class="nom mb-0">Choisir et utiliser des bibliothèques et méthodes dédiées au domaine d'application</p>
-                                                    </li>
-                                                    
-                                                
-                                                    <li data-id="4" class="list-group-item d-flex justify-content-between align-items-center">
-                                                        <h4 class="num text-primary">3. AC 1</h4>
-                                                        <p class="nom mb-0">Concevoir et développer des applications communicantes</p>
-                                                    </li>
-                                                    
-                                                
-                                                    <li data-id="5" class="list-group-item d-flex justify-content-between align-items-center">
-                                                        <h4 class="num text-primary">3. AC 2</h4>
-                                                        <p class="nom mb-0">Utiliser des serveurs et des services réseaux virtualisés</p>
-                                                    </li>
-                                                    
-                                                
-                                                    <li data-id="6" class="list-group-item d-flex justify-content-between align-items-center">
-                                                        <h4 class="num text-primary">3. AC 3</h4>
-                                                        <p class="nom mb-0">Sécuriser les services et données d’un système</p>
-                                                    </li>
-                                                    
-                                                
-                                                    <li data-id="7" class="list-group-item d-flex justify-content-between align-items-center">
-                                                        <h4 class="num text-primary">4. AC 2</h4>
-                                                        <p class="nom mb-0">Assurer la confidentialité des données</p>
-                                                    </li>
-                                                    
-                                                
-                                                    <li data-id="8" class="list-group-item d-flex justify-content-between align-items-center">
-                                                        <h4 class="num text-primary">5. AC 4</h4>
-                                                        <p class="nom mb-0">Suivi de projet</p>
-                                                    </li>
-                                                    
-                                                
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
-            </div>
-            <br>
-            
+            </article>
         
     </div>
 </section>
 
 
-<hr largeur="100%"/>
-<footer class="bg-dark text-center text-white py-4">
-  <div>
-      <h2 class="text-primary">Portfolio de Mathys CAPO</h2>
-  </div>
-  <div id="imagesFooter" class="d-flex justify-content-center align-items-center mt-3 gap-4">
-      <a href="https://www.linkedin.com/in/mathyscapo/" target="_blank" class="text-primary fs-3">
-          <i class="bi bi-linkedin"></i>
-      </a>
-      <a href="mailto:mathys.capo@etu.umontpellier.fr" class="text-primary fs-3">
-          <i class="bi bi-envelope-fill"></i>
-      </a>
-      <a href="https://gitlabinfo.iutmontp.univ-montp2.fr/capom" target="_blank" class="text-primary fs-3">
-          <i class="bi bi-github"></i>
-      </a>
-  </div>
+
+<hr class="footer-separator"/>
+
+<footer class="footer text-center">
+    <div class="container">
+
+        <h2>Portfolio de Mathys CAPO</h2>
+
+        <p class="footer-role">
+            Développeur Web · Étudiant en informatique
+        </p>
+
+        <div id="imagesFooter" class="d-flex justify-content-center gap-4 mt-4">
+            <a href="https://www.linkedin.com/in/mathyscapo/" target="_blank" aria-label="LinkedIn">
+                <i class="bi bi-linkedin"></i>
+            </a>
+
+            <a href="https://gitlabinfo.iutmontp.univ-montp2.fr/capom" target="_blank" aria-label="GitHub">
+                <i class="bi bi-github"></i>
+            </a>
+        </div>
+
+        <p class="footer-copy mt-4">
+            © 2025 Mathys Capo
+        </p>
+
+    </div>
 </footer>
-
-  
-<div id="endpage"></div>
-
-
-
-</html>
-
-

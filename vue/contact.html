@@ -2,34 +2,46 @@
 layout: layout_basic
 permalink: /contact/
 title: Pour me contacter
+waves: true
 ---
-<link rel="stylesheet" href="../ressources/css/contact.css">
+<script src="../ressources/js/index.js"></script>
+<link rel="stylesheet" href="../ressources/css/pages/contact.css">
 
-<section class="contact section d-flex align-items-center justify-content-center mt-5">
-    <div class="container text-center">
-        <h2 class="section-title text-primary ">Contact</h2>
+<section class="contact-section">
+    <div class="container">
 
-        <div class="row justify-content-center bg-secondary bg-opacity-50">
-            <!-- Coordonnées -->
-            <div class="col-md-6">
-                <h3 class="text-light mb-4">Mes Coordonnées</h3>
-                <ul class="list-unstyled">
-                    <li class="mb-3">
-                        <i class="bi bi-envelope-fill text-primary me-2"></i>
-                        <span class="fw-bold">Email :</span> <a href="mailto:{{site.data.information.mail.url}}" class="text-light">{{site.data.information.mail.url}}</a>
-                    </li>
-                    <li class="mb-3">
-                        <i class="bi bi-linkedin text-primary me-2"></i>
-                        <span class="fw-bold">LinkedIn :</span> <a href="{{site.data.information.linkedin.url}}" target="_blank" class="text-light">{{site.data.information.linkedin.url}}</a>
-                    </li>
-                    <li class="mb-3">
-                        <i class="bi bi-github text-primary me-2"></i>
-                        <span class="fw-bold">GitLab :</span> <a href="{{site.data.information.gitlab.url}}" target="_blank" class="text-light">{{site.data.information.gitlab.url}}</a>
-                    </li>
-                </ul>
-            </div>
+        <h2 class="section-title text-center">Contact</h2>
+        <p class="contact-intro text-center">
+            N’hésitez pas à me contacter pour un projet, un stage ou toute question.
+        </p>
+
+        <div class="contact-card mx-auto">
+            <ul class="contact-list">
+                <li>
+                    <i class="bi bi-envelope-fill"></i>
+                    <span>Email</span>
+                    <a href="mailto:{{site.data.information.mail.url}}">
+                        {{site.data.information.mail.url}}
+                    </a>
+                </li>
+
+                <li>
+                    <i class="bi bi-linkedin"></i>
+                    <span>LinkedIn</span>
+                    <a href="{{site.data.information.linkedin.url}}" target="_blank">
+                        {{site.data.information.linkedin.url}}
+                    </a>
+                </li>
+
+                <li>
+                    <i class="bi bi-github"></i>
+                    <span>GitLab</span>
+                    <a href="{{site.data.information.gitlab.url}}" target="_blank">
+                        {{site.data.information.gitlab.url}}
+                    </a>
+                </li>
+            </ul>
         </div>
+
     </div>
 </section>
-
-

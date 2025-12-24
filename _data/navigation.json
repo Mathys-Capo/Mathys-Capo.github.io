@@ -3,27 +3,37 @@
         {
             "url":"/",
             "title": "Accueil",
-            "name": "accueil"
-        },
-        {
-            "url":"/competences/",
-            "title": "Compétence",
-            "name": "Compétence"
-        },
-        {
-            "url":"/Portfolio d’apprentissage pour le BUT/",
-            "title": "Portfolio d’apprentissage",
-            "name": "Portfolio d’apprentissage"
+            "name": "accueil",
+            "submenu":[]
         },
         {
             "url":"/projets/",
             "title": "Projets",
-            "name": "Projets"
+            "name": "Projets",
+            "submenu":[]
+        },
+        {
+            "url":"/fun/",
+            "title": "Fun",
+            "name": "Fun",
+            "submenu":[
+                {
+                    "url":"/fun/fact",
+                    "title": "Fact",
+                    "name": "Fact"
+                },
+                {
+                    "url":"/fun/carte",
+                    "title": "Cartes",
+                    "name": "Cartes"
+                }
+            ]
         },
         {
             "url":"/contact/",
             "title": "Contact",
-            "name": "Contact"
+            "name": "Contact",
+            "submenu":[]
         }
     ]
 }

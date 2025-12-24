@@ -1,20 +1,59 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="../../ressources/img/logo.png" alt="Logo" style="height: 40px;">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    {% for page in site.data.navigation.pages %}
-                    <li class="nav-item">
-                        <button onclick='window.location.href = "{{ page.url }}"' class="btn btn-outline-primary rounded-pill nav-link text-white">{{ page.title }}</button>
-                    </li>
-                    {% endfor %}
-                </ul>
-            </div>
-        </div>
-    </nav>
-    
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">
+      <img src="../../ressources/img/logo.png" alt="Logo" style="height: 40px;">
+    </a>
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+
+        {% for page in site.data.navigation.pages %}
+          {% if page.submenu and page.submenu.size > 0 %}
+            <!-- Item avec sous-menu -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-white"
+                href="{{ page.url }}"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                {{ page.title }}
+              </a>
+
+              <ul class="dropdown-menu dropdown-menu-dark">
+                {% for sub in page.submenu %}
+                  <li>
+                    <a class="dropdown-item" href="{{ sub.url }}">
+                      {{ sub.title }}
+                    </a>
+                  </li>
+                {% endfor %}
+              </ul>
+            </li>
+          {% else %}
+            <!-- Item simple -->
+            <li class="nav-item">
+              <a class="nav-link text-white" href="{{ page.url }}">
+                {{ page.title }}
+              </a>
+            </li>
+          {% endif %}
+        {% endfor %}
+
+      </ul>
+    </div>
+  </div>
+</nav>

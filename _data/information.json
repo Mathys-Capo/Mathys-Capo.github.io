@@ -1,9 +1,9 @@
 {
   "prenom": "Mathys",
   "name": "CAPO",
-  "etude": "Etudiant BUT informatique", 
-  "complement": "Parcours RAGDV",
-  "signification": "(Réalisation d'applications : conception, développement, validation FI)",
+  "work": "Dévellopeur informatique", 
+  "complement": "",
+  "signification": "",
   "gitlab":{
     "url": "https://gitlabinfo.iutmontp.univ-montp2.fr/capom"
   },
@@ -11,6 +11,6 @@
     "url": "https://www.linkedin.com/in/mathyscapo/"
   },
   "mail":{
-    "url":"mathys.capo@etu.umontpellier.fr"
+    "url":"mathyscapo974@gmail.com"
   }
 }

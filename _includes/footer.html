@@ -1,26 +1,27 @@
-<hr largeur="100%"/>
-<footer class="bg-dark text-center text-white py-4">
-  <div>
-      <h2 class="text-primary">Portfolio de Mathys CAPO</h2>
-  </div>
-  <div id="imagesFooter" class="d-flex justify-content-center align-items-center mt-3 gap-4">
-      <a href="https://www.linkedin.com/in/mathyscapo/" target="_blank" class="text-primary fs-3">
-          <i class="bi bi-linkedin"></i>
-      </a>
-      <a href="mailto:mathys.capo@etu.umontpellier.fr" class="text-primary fs-3">
-          <i class="bi bi-envelope-fill"></i>
-      </a>
-      <a href="https://gitlabinfo.iutmontp.univ-montp2.fr/capom" target="_blank" class="text-primary fs-3">
-          <i class="bi bi-github"></i>
-      </a>
-  </div>
+<hr class="footer-separator"/>
+
+<footer class="footer text-center">
+    <div class="container">
+
+        <h2>Portfolio de Mathys CAPO</h2>
+
+        <p class="footer-role">
+            Développeur Web · Étudiant en informatique
+        </p>
+
+        <div id="imagesFooter" class="d-flex justify-content-center gap-4 mt-4">
+            <a href="https://www.linkedin.com/in/mathyscapo/" target="_blank" aria-label="LinkedIn">
+                <i class="bi bi-linkedin"></i>
+            </a>
+
+            <a href="https://gitlabinfo.iutmontp.univ-montp2.fr/capom" target="_blank" aria-label="GitHub">
+                <i class="bi bi-github"></i>
+            </a>
+        </div>
+
+        <p class="footer-copy mt-4">
+            © {{ "now" | date: "%Y" }} Mathys Capo
+        </p>
+
+    </div>
 </footer>
-
-  
-<div id="endpage"></div>
-
-
-
-</html>
-
-
