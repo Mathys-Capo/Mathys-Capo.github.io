@@ -1,0 +1,75 @@
+/* Carte principale */
+.cartes-section{
+    margin-top: 10vh;
+}
+
+.main-card-zone {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centre horizontalement */
+  justify-content: center; /* centre verticalement si besoin */
+  gap: 1.5rem;
+}
+
+/* Limiter la taille de la carte piochée */
+#card-area img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* S'assurer que cartes-zone garde le flex même sur mobile */
+.cartes-zone {
+  width: 100%;
+  justify-content: center; /* centre main-card-zone et piles horizontalement */
+}
+
+
+/**/
+/* Piles avec effet d'empilement */
+.piles-zone .pile {
+  position: relative;
+  width: 100px;
+  height: 200px; /* hauteur totale approximative pour la pile */
+}
+
+.piles-zone .pile img {
+  position: absolute;
+  top: 0; /* la première carte */
+  left: 0;
+  width: 80px;
+  object-fit: contain;
+  transition: transform 0.2s;
+}
+
+/* Pour que la première carte ne remonte pas */
+.piles-zone .pile img:first-child {
+  margin-top: 0;
+  z-index: 10; /* devant */
+}
+
+/* Effet de hover sympa */
+.piles-zone .pile img:hover {
+  transform: translateY(-10px) scale(1.05);
+  z-index: 100;
+}
+
+.piles-zone .pile img:nth-child(1) { z-index: 1; }
+.piles-zone .pile img:nth-child(2) { z-index: 2; }
+.piles-zone .pile img:nth-child(3) { z-index: 3; }
+.piles-zone .pile img:nth-child(4) { z-index: 4; }
+.piles-zone .pile img:nth-child(5) { z-index: 5; }
+.piles-zone .pile img:nth-child(6) { z-index: 6; }
+.piles-zone .pile img:nth-child(7) { z-index: 7; }
+.piles-zone .pile img:nth-child(8) { z-index: 8; }
+.piles-zone .pile img:nth-child(9) { z-index: 9; }
+.piles-zone .pile img:nth-child(10) { z-index: 10; }
+.piles-zone .pile img:nth-child(11) { z-index: 11; }
+.piles-zone .pile img:nth-child(12) { z-index: 12; }
+.piles-zone .pile img:nth-child(13) { z-index: 13; }
+
+@media (max-width: 768px) {
+    .piles-zone{
+        visibility: collapse;
+    }
+}

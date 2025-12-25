@@ -11,7 +11,7 @@ async function getFact(type) {
     if (!response.ok) throw new Error("Erreur API");
 
     const data = await response.json();
-    console.log(response)
+    console.log(data)
     factText.textContent = data.text;
   } catch (error) {
     factText.textContent = "Impossible de récupérer la fun fact. 😢";
