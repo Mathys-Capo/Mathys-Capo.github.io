@@ -1,4 +1,7 @@
 .contact-section {
-  height: 50vh;
-  margin-top: 5%;
+  min-height: 100vh; /* plein écran */
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 2; /* AU-DESSUS DES WAVES */
 }
