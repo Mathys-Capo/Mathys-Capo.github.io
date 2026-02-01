@@ -1,0 +1,157 @@
+---
+layout: layout_basic
+title: Test
+permalink: /success
+crop_waves: true
+waves: true
+no_center: true
+---
+<section class="container">
+  <h1 class="text-center">Mes Success</h1>
+
+  <div id="success-grid" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4"></div>
+
+  <button id="clear-success" type="button" class="btn btn-danger mt-3">
+    Clear
+  </button>
+</section>
+
+<!-- Three.js via CDN ES Modules -->
+<script type="module" defer>
+import { CookieManager } from "../ressources/js/cookieManager.js";
+import { Success } from "../ressources/js/success.js";
+import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.158.0/build/three.module.js';
+import { GLTFLoader } from 'https://cdn.jsdelivr.net/npm/three@0.158.0/examples/jsm/loaders/GLTFLoader.js';
+
+const successGrid = document.getElementById("success-grid");
+const clearSuccess = document.getElementById("clear-success");
+
+clearSuccess.addEventListener("click", () => {
+  Success.getAllSuccess().forEach(success => CookieManager.delete(success.id));
+  Success.getAllPages().forEach(page => CookieManager.delete(page));
+});
+
+// Fonction pour créer un cube 3D visible
+function createGLBCard(success) {
+  const cardCol = document.createElement("div");
+  cardCol.className = "col";
+
+  const card = document.createElement("div");
+  card.className = "card card-success h-100 text-center";
+  cardCol.appendChild(card);
+
+  // Canvas
+  const canvas = document.createElement("canvas");
+  canvas.width = 250;
+  canvas.height = 200;
+  card.appendChild(canvas);
+
+  const cardBody = document.createElement("div");
+  cardBody.className = "card-body";
+  const cardTitle = document.createElement("h5");
+  cardTitle.className = "card-title";
+  cardTitle.textContent = success.titre ?? "Unnamed Success";
+  cardBody.appendChild(cardTitle);
+  card.appendChild(cardBody);
+
+  // Three.js
+  const scene = new THREE.Scene();
+  scene.background = new THREE.Color(0xffffff);
+
+  const aspect = canvas.width / canvas.height;
+  const zomm = Success.isDone(success.id) ? success.glb.zoom : 0.8;
+  const camera = new THREE.OrthographicCamera(
+    -zomm * aspect,
+    zomm * aspect,
+    zomm,
+    -zomm,
+    -100,
+    100
+  );
+
+  camera.position.set(0, 0, 10);
+  camera.lookAt(0, 0, 0);
+
+  const renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: true });
+  renderer.setSize(canvas.width, canvas.height);
+  renderer.setPixelRatio(window.devicePixelRatio);
+
+  const ambientLight = new THREE.AmbientLight(0xffffff, 0.7);
+  scene.add(ambientLight);
+  const dirLight = new THREE.DirectionalLight(0xffffff, 0.8);
+  dirLight.position.set(5, 5, 5);
+  scene.add(dirLight);
+
+  //GLB
+  let model = null;
+
+  const loader = new GLTFLoader();
+  loader.load(Success.isDone(success.id)? success.glb.url: '../ressources/glb/mystery_box.glb', (gltf) => {
+      model = gltf.scene;
+      model.scale.set(1, 1, 1);
+      scene.add(model);
+      animate();
+
+      const box = new THREE.Box3().setFromObject(model);
+      const center = box.getCenter(new THREE.Vector3());
+      model.position.sub(center);
+    },undefined, (error) => {
+      console.error("Erreur GLB :", error);
+    }
+  );
+
+  let t = 0;
+  function animate() {
+    requestAnimationFrame(animate);
+    t += 0.01;
+
+    if (model) {
+      model.rotation.y += 0.004;
+      model.rotation.x = Math.sin(t) * 0.05; // micro oscillation
+    }
+
+    renderer.render(scene, camera);
+  }
+
+  return cardCol;
+}
+
+// Crée toutes les cartes avec cubes
+Success.getAllSuccess().forEach((success) => {
+  const card3D = createGLBCard(success);
+  successGrid.appendChild(card3D);
+
+  if (!Success.isDone(success.id)) {
+    card3D.querySelector(".card").classList.add("opacity-50");
+  }
+});
+
+Success.trackPage("success");
+</script>
+
+
+<style>
+.card-success {
+  border: 2px solid var(--blue);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+.card-success:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px var(--blue);
+}
+
+.card-success canvas {
+  display: block;
+  margin: 0 auto;
+  background-color: var(--white);
+}
+
+.card-success .card-body {
+  background-color: var(--white);
+}
+</style>

@@ -2,8 +2,9 @@
 layout: layout_basic
 permalink: /projets/
 title: Mes travaux
+no_center: true
 ---
-<script src="../ressources/js/projets.js"></script>
+
 <link rel="stylesheet" href="../ressources/css/pages/projets.css">
 
 <section class="content_general pt-5">
@@ -32,3 +33,10 @@ title: Mes travaux
     </div>
 </section>
 
+<script type="module">
+import { CookieManager } from "../ressources/js/cookieManager.js";
+import { Success } from "../ressources/js/success.js";
+
+Success.trackPage("projets");
+
+</script>

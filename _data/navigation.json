@@ -18,7 +18,7 @@
             "name": "Fun",
             "submenu":[
                 {
-                    "url":"/fun/fact",
+                    "url":"/fun/facts",
                     "title": "Fact",
                     "name": "Fact"
                 },
@@ -28,6 +28,12 @@
                     "name": "Cartes"
                 }
             ]
+        },
+        {
+            "url":"/success",
+            "title": "Success",
+            "name": "Success",
+            "submenu":[]
         },
         {
             "url":"/contact/",

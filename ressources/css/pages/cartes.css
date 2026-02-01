@@ -35,7 +35,6 @@
 
 .piles-zone .pile img {
   position: absolute;
-  top: 0; /* la première carte */
   left: 0;
   width: 80px;
   object-fit: contain;
@@ -55,20 +54,20 @@
 }
 
 .piles-zone .pile img:nth-child(1) { z-index: 1; }
-.piles-zone .pile img:nth-child(2) { z-index: 2; }
-.piles-zone .pile img:nth-child(3) { z-index: 3; }
-.piles-zone .pile img:nth-child(4) { z-index: 4; }
-.piles-zone .pile img:nth-child(5) { z-index: 5; }
-.piles-zone .pile img:nth-child(6) { z-index: 6; }
-.piles-zone .pile img:nth-child(7) { z-index: 7; }
-.piles-zone .pile img:nth-child(8) { z-index: 8; }
-.piles-zone .pile img:nth-child(9) { z-index: 9; }
-.piles-zone .pile img:nth-child(10) { z-index: 10; }
-.piles-zone .pile img:nth-child(11) { z-index: 11; }
-.piles-zone .pile img:nth-child(12) { z-index: 12; }
-.piles-zone .pile img:nth-child(13) { z-index: 13; }
+.piles-zone .pile img:nth-child(2) { z-index: 2; bottom: 15%; }
+.piles-zone .pile img:nth-child(3) { z-index: 3; bottom: 0%; }
+.piles-zone .pile img:nth-child(4) { z-index: 4; bottom: -15%;}
+.piles-zone .pile img:nth-child(5) { z-index: 5; bottom: -30%;}
+.piles-zone .pile img:nth-child(6) { z-index: 6; bottom: -45%}
+.piles-zone .pile img:nth-child(7) { z-index: 7; bottom: -60%}
+.piles-zone .pile img:nth-child(8) { z-index: 8; bottom: -75%}
+.piles-zone .pile img:nth-child(9) { z-index: 9; bottom: -90%}
+.piles-zone .pile img:nth-child(10) { z-index: 10; bottom: -105%}
+.piles-zone .pile img:nth-child(11) { z-index: 11; bottom: -120%}
+.piles-zone .pile img:nth-child(12) { z-index: 12; bottom: -135%}
+.piles-zone .pile img:nth-child(13) { z-index: 13; bottom: -150%}
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     .piles-zone{
         visibility: collapse;
     }

@@ -2,8 +2,10 @@
 layout: layout_basic
 title: Page d'accueil
 waves: true
+crop_waves: true
+no_center: true
 ---
-<script src="../ressources/js/index.js"></script>
+
 <link rel="stylesheet" href="../ressources/css/pages/index.css">
 
 <section id="content_accueil"
@@ -23,10 +25,10 @@ waves: true
        class="btn btn-primary btn-lg">
       Télécharger mon CV
     </a>
-  </div>
+  </div>  
 
   <div class="scroll-indicator">
-    <a href="#accueil_projets" aria-label="Descendre">
+    <a href="#accueil_projets">
       <span></span>
     </a>
   </div>
@@ -84,3 +86,15 @@ waves: true
 </div>
 
 </section>
+
+<script type="module">
+import { CookieManager } from "../ressources/js/cookieManager.js";
+import { Success } from "../ressources/js/success.js";
+import { MessageFlash } from "../ressources/js/messageFlash.js";
+
+
+Success.trackPage("index");
+
+new MessageFlash("Info", "Message 1").see();
+
+</script>

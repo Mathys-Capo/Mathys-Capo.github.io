@@ -1,15 +1,30 @@
-html {
-  scroll-behavior: smooth;
-  min-height: 100%;
+html, body {
+  height: 100%;
 }
 
 body {
-  margin: 0;
   font-family: 'Red Hat Display', sans-serif;
   background-color: #000 !important;
   color: var(--white);
+  padding-top: 70px; /* navbar fixed */
   display: flex;
   flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+} 
+
+main.centered {
+  display: flex;
+  align-items: center;
+}
+
+footer {
+  background-color: var(--black);
+  color: var(--white);
+  width: 100%;
+  position: relative; /* ⬅️ plus fixed */
 }
 
 a {

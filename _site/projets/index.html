@@ -1,23 +1,41 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <title>Mes travaux</title>
-        <link rel="icon" href="../ressources/img/logo.png" />
 
-        <script src="../ressources/js/anime.js/anime.min.js"></script>
-        <script src="../ressources/js/compiled/parallax.min.js"></script>
-
-        <link rel="stylesheet" href="../ressources/bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="../ressources/bootstrap-icons/bootstrap-icons.min.css">
-        <script src="../ressources/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-        <link rel="stylesheet" href="../ressources/css/main.css">
-
-    </head>
+  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <title>Mes travaux</title>
+    <link rel="icon" href="../ressources/img/logo.png" />
+
+    <script src="../ressources/js/anime.js/anime.min.js"></script>
+    <script src="../ressources/js/compiled/parallax.min.js"></script>
+
+    <link rel="stylesheet" href="../ressources/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../ressources/bootstrap-icons/bootstrap-icons.min.css">
+    <script src="../ressources/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="../ressources/css/main.css">
+
+    <script src="../ressources/js/index.js" defer></script>
+
+    <script type="importmap">
+    {
+    "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.158.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.158.0/examples/jsm/"
+    }
+    }
+    </script>
+</head>
+    
+
+
+       
+
+  <body>
+
     <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
   <div class="container-fluid">
     <a class="navbar-brand" href="/">
@@ -74,7 +92,7 @@
               <ul class="dropdown-menu dropdown-menu-dark">
                 
                   <li>
-                    <a class="dropdown-item" href="/fun/fact">
+                    <a class="dropdown-item" href="/fun/facts">
                       Fact
                     </a>
                   </li>
@@ -86,6 +104,15 @@
                   </li>
                 
               </ul>
+            </li>
+          
+        
+          
+            <!-- Item simple -->
+            <li class="nav-item">
+              <a class="nav-link text-white" href="/success">
+                Success
+              </a>
             </li>
           
         
@@ -104,14 +131,26 @@
   </div>
 </nav>
 
+    
 
     
 
-       
+    <div id="flash">
+  <div id="flash_logo">
+    <!-- logo ou icône -->
+    <img id="flash_logo_img">
+  </div>
 
-<main class="flex-fill" style="height: 84vh;">
-    <script src="../ressources/js/projets.js"></script>
-<link rel="stylesheet" href="../ressources/css/pages/projets.css">
+  <div id="flash_content">
+    <h3 id="flash_title">Succès</h3>
+    <p id="flash_text">
+      Ton message flash fonctionne correctement.
+    </p>
+  </div>
+</div>
+
+    <main class="">
+      <link rel="stylesheet" href="../ressources/css/pages/projets.css">
 
 <section class="content_general pt-5">
     <h2 class="section-title text-center mb-5 pt-5">Mes Projets</h2>
@@ -211,12 +250,19 @@
     </div>
 </section>
 
+<script type="module">
+import { CookieManager } from "../ressources/js/cookieManager.js";
+import { Success } from "../ressources/js/success.js";
 
-</main>
+Success.trackPage("projets");
 
-<hr class="footer-separator"/>
+</script>
+    </main>
+
+    
 
 <footer class="footer text-center">
+    <hr class="footer-separator"/>
     <div class="container">
 
         <h2>Portfolio de Mathys CAPO</h2>
@@ -236,8 +282,12 @@
         </div>
 
         <p class="footer-copy mt-4">
-            © 2025 Mathys Capo
+            © 2026 Mathys Capo
         </p>
 
     </div>
 </footer>
+
+
+  </body>
+</html>

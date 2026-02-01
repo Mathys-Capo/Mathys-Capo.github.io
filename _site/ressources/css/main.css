@@ -2,3 +2,4 @@
 @import "./base/reset.css";
 @import "./base/layout.css";
 @import "./base/components.css";
+@import "./base/messageFlash.css";

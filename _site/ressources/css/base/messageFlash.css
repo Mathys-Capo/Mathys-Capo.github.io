@@ -1,0 +1,92 @@
+#flash {
+  position: fixed;
+  top: 5%;
+  right: 1%;
+  width: 360px;
+
+  display: flex;
+  gap: 14px;
+
+  padding: 16px 18px;
+  background: var(--black);
+  color: var(--white);
+
+  border: 2px solid var(--blue);
+  border-radius: 10px;
+
+  box-shadow:
+    0 0 10px rgba(82, 99, 254, 0.6),
+    0 0 20px rgba(82, 99, 254, 0.4),
+    0 0 40px rgba(82, 99, 254, 0.2);
+
+  opacity: 0;
+  transform: translateX(120%);
+  pointer-events: none;
+
+  z-index: 10000;
+}
+
+
+#flash_logo {
+  width: 40px;
+  height: 40px;
+
+  background: var(--blue);
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#flash_logo img {
+  width: 50px;
+  height: 50px;
+}
+
+#flash_content {
+  flex: 1;
+}
+
+#flash_title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+#flash_text {
+  margin: 6px 0 0;
+  font-size: 14px;
+  line-height: 1.4;
+  opacity: 0.85;
+}
+
+/* ---------------- ANIMATIONS ---------------- */
+
+@keyframes flash-in {
+  from {
+    opacity: 0;
+    transform: translateX(120%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes flash-out {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(120%);
+  }
+}
+
+/* classe ajoutée par JS */
+.flash-show {
+  animation: flash-in 0.5s ease-out forwards,
+             flash-out 0.5s ease-in forwards 3s;
+}

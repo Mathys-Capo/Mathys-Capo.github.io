@@ -1,7 +1,33 @@
-{% include header.html %}
+<!DOCTYPE html>
+<html lang="fr">
 
-<main class="flex-fill" style="height: 84vh;">
-    {{ content }}
-</main>
+  {% include header.html %}
 
-{% include footer.html %}
+  <body>
+
+    {% include navigation.html %}
+    
+
+    {% if page.waves %}
+      <div class="{% if page.crop_waves %}wave_fixed{% else %}wave_absolute{% endif %}"> 
+            <img src="../ressources/img/bg-wave/wave1.png" id="wave1"/>
+            <img src="../ressources/img/bg-wave/wave2.png" id="wave2"/>
+            <img src="../ressources/img/bg-wave/wave3.png" id="wave3"/>
+            <img src="../ressources/img/bg-wave/wave4.png" id="wave4"/>
+
+            <img src="../ressources/img/bg-wave/wave1_reverse.png" id="wave1_reverse"/>
+            <img src="../ressources/img/bg-wave/wave2_reverse.png" id="wave2_reverse"/>
+            <img src="../ressources/img/bg-wave/wave3_reverse.png" id="wave3_reverse"/>
+            <img src="../ressources/img/bg-wave/wave4_reverse.png" id="wave4_reverse"/>
+      </div>
+    {% endif %}
+
+    {% include messageFlash.html %}
+    <main class="{% unless page.no_center %}centered{% endunless %}">
+      {{ content }}
+    </main>
+
+    {% include footer.html %}
+
+  </body>
+</html>

@@ -1,37 +1,32 @@
-<!DOCTYPE html>
-<html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <title>{{page.title}}</title>
-        <link rel="icon" href="../ressources/img/logo.png" />
 
-        <script src="../ressources/js/anime.js/anime.min.js"></script>
-        <script src="../ressources/js/compiled/parallax.min.js"></script>
-
-        <link rel="stylesheet" href="../ressources/bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="../ressources/bootstrap-icons/bootstrap-icons.min.css">
-        <script src="../ressources/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-        <link rel="stylesheet" href="../ressources/css/main.css">
-
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    {% include navigation.html %}
+    <title>{{page.title}}</title>
+    <link rel="icon" href="../ressources/img/logo.png" />
 
-    {% if page.waves %}
-        <div class="wave">
-            <img src="../ressources/img/bg-wave/wave1.png" id="wave1"/>
-            <img src="../ressources/img/bg-wave/wave2.png" id="wave2"/>
-            <img src="../ressources/img/bg-wave/wave3.png" id="wave3"/>
-            <img src="../ressources/img/bg-wave/wave4.png" id="wave4"/>
+    <script src="../ressources/js/anime.js/anime.min.js"></script>
+    <script src="../ressources/js/compiled/parallax.min.js"></script>
 
-            <img src="../ressources/img/bg-wave/wave1_reverse.png" id="wave1_reverse"/>
-            <img src="../ressources/img/bg-wave/wave2_reverse.png" id="wave2_reverse"/>
-            <img src="../ressources/img/bg-wave/wave3_reverse.png" id="wave3_reverse"/>
-            <img src="../ressources/img/bg-wave/wave4_reverse.png" id="wave4_reverse"/>
-        </div>
-    {% endif %}
+    <link rel="stylesheet" href="../ressources/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../ressources/bootstrap-icons/bootstrap-icons.min.css">
+    <script src="../ressources/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="../ressources/css/main.css">
+
+    <script src="../ressources/js/index.js" defer></script>
+
+    <script type="importmap">
+    {
+    "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.158.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.158.0/examples/jsm/"
+    }
+    }
+    </script>
+</head>
+    
+
 
        
