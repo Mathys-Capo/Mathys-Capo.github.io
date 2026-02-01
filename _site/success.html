@@ -167,9 +167,6 @@
 
   <div id="success-grid" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4"></div>
 
-  <button id="clear-success" type="button" class="btn btn-danger mt-3">
-    Clear
-  </button>
 </section>
 
 <!-- Three.js via CDN ES Modules -->
@@ -180,12 +177,6 @@ import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.158.0/build/three.m
 import { GLTFLoader } from 'https://cdn.jsdelivr.net/npm/three@0.158.0/examples/jsm/loaders/GLTFLoader.js';
 
 const successGrid = document.getElementById("success-grid");
-const clearSuccess = document.getElementById("clear-success");
-
-clearSuccess.addEventListener("click", () => {
-  Success.getAllSuccess().forEach(success => CookieManager.delete(success.id));
-  Success.getAllPages().forEach(page => CookieManager.delete(page));
-});
 
 // Fonction pour créer un cube 3D visible
 function createGLBCard(success) {
