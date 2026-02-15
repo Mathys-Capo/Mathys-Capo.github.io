@@ -11,7 +11,7 @@ no_center: true
     <h2 class="section-title text-center mb-5 pt-5">Mes Projets</h2>
 
     <div class="projets container">
-        {% for projet in site.data.img.projets %}
+        {% for projet in site.data.projects.array %}
             <article class="projet-item" id="{{projet.id}}">
                 <h3 class="projet-title">{{projet.titre}}</h3>
 

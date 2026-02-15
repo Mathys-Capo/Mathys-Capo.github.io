@@ -1,0 +1,13 @@
+{
+    "downloadMaessage":"Télécharger mon CV",
+    "introductionMeMessage":"Salut, moi c'est",
+    "description":{
+        "about":"À PROPOS",
+        "subtitle":"Qui suis-je ?",
+        "text":[
+            "Je m'appelle Mathys, j'ai 21 ans et je suis développeur web diplômé d'un BUT Informatique parcours RACDV. Passionné par la conception et le développement d'applications, j'aime transformer un besoin en solution concrète, efficace et maintenable.",
+            "Lors de mes expériences en stage, alternance et CDD, j'ai développé des outils métiers et une plateforme Extranet complète (API, base de données, interface web, reporting). Je travaille principalement avec PHP (Symfony), Vue.js, Java, Python et Git.",
+            "Rigoureux, autonome et force de proposition, je cherche à progresser continuellement et à contribuerà des projets innovants."
+        ]
+    }
+}

@@ -12,7 +12,7 @@ no_center: true
   class="container text-white d-flex flex-column justify-content-center vh-100">
 
   <h1 class="titre_accueil text-center">
-    Salut, moi c’est {{ site.data.information.prenom }} {{ site.data.information.name }}
+    {{ site.data.text.introductionMeMessage }} {{ site.data.information.prenom }} {{ site.data.information.name }}
   </h1>
 
   <div class="mt-4 text-center">
@@ -23,7 +23,7 @@ no_center: true
   <div class="text-center mt-4">
     <a href="./ressources/pdf/cv.pdf" download="CV-CAPO-Mathys.pdf"
        class="btn btn-primary btn-lg">
-      Télécharger mon CV
+      {{ site.data.text.downloadMaessage }}
     </a>
   </div>  
 
@@ -37,53 +37,38 @@ no_center: true
 <section id="accueil_projets" class="container mt-5 text-white">
 
   <div id="description" class="bg-secondary bg-opacity-20 rounded p-4 mb-5">
-    <h1 class="text-primary">À PROPOS</h1>
-    <h2>Qui suis-je ?</h2>
-    <p>Je m’appelle Mathys, j’ai 20 ans...</p>
+    <h1 class="text-primary">{{ site.data.text.description.about }}</h1>
+    <h2>{{ site.data.text.description.subtitle }}</h2>
+    {% for description in site.data.text.description.text %}
+    <p>{{description}}</p>
+    {% endfor %}
   </div>
 
   <div class="row g-4">
 
-  <div class="col-md-4">
-    <div class="projet position-relative" id="projet_num1">
-      <div class="content p-4 d-flex flex-column justify-content-between h-100">
-        <div class="d-flex justify-content-between align-items-center">
-          <p class="numero">01</p>
-          <p class="type badge bg-light text-dark">Développement Web</p>
+    {% for projet in site.data.projects.array limit: 3 %}
+    <div class="col-md-4">
+      <div class="projet position-relative" id="projet_num{{ forloop.index }}">
+        <div class="content p-4 d-flex flex-column justify-content-between h-100">
+          <div class="d-flex justify-content-between align-items-center">
+            <p class="numero">
+              {{ forloop.index | prepend: "0" }}
+            </p>
+            <p class="type badge bg-light text-dark">
+              {{ projet.type }}
+            </p>
+          </div>
+
+          <h3>{{ projet.titre }}</h3>
+          <p>{{ projet.description[0] | truncate: 100, "..." }}</p>
+
         </div>
-        <h3>Traducteur en orthographe d’Apparat</h3>
-        <p>L’orthographe d’apparat est un language qui est une satire de la langue française que j'ai réaliser en JAVA...</p>
       </div>
     </div>
+    {% endfor %}
+
   </div>
 
-  <div class="col-md-4">
-    <div class="projet position-relative" id="projet_num2">
-      <div class="content p-4 d-flex flex-column justify-content-between h-100">
-        <div class="d-flex justify-content-between align-items-center">
-          <p class="numero">02</p>
-          <p class="type badge bg-light text-dark">Développement Web</p>
-        </div>
-        <h3>Jeu de la vie JS</h3>
-        <p>Automate cellulaire développé par John Conway.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-md-4">
-    <div class="projet position-relative" id="projet_num3">
-      <div class="content p-4 d-flex flex-column justify-content-between h-100">
-        <div class="d-flex justify-content-between align-items-center">
-          <p class="numero">03</p>
-          <p class="type badge bg-light text-dark">Développement Web</p>
-        </div>
-        <h3>Site Internet</h3>
-        <p>Réalisation répondant aux besoins d’un client.</p>
-      </div>
-    </div>
-  </div>
-
-</div>
 
 </section>
 

@@ -68,3 +68,50 @@
 .type {
   font-size: 0.9rem;
 }
+
+/* =========================
+   FLÈCHE DE SCROLL
+========================= */
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 20vh;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
+}
+
+.scroll-indicator span {
+  display: block;
+  width: 26px;
+  height: 26px;
+  border-right: 3px solid white;
+  border-bottom: 3px solid white;
+  transform: rotate(45deg);
+  animation: scrollBounce 1.5s infinite;
+}
+
+
+.scroll-indicator a {
+  display: block;
+  width: 30px;
+  height: 50px;
+}
+
+
+/* Animation */
+@keyframes scrollBounce {
+  0% {
+    transform: rotate(45deg) translate(0, 0);
+    opacity: 1;
+  }
+  50% {
+    transform: rotate(45deg) translate(0, 10px);
+    opacity: 0.6;
+  }
+  100% {
+    transform: rotate(45deg) translate(0, 0);
+    opacity: 1;
+  }
+}
+
