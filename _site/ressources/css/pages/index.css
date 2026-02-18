@@ -47,9 +47,9 @@
 }
 
 /* Images par projet */
-#projet_num1::before { background-image: url('../../../ressources/img/orthoapparat.png'); }
-#projet_num2::before { background-image: url('../../../ressources/img/jeudelavie.gif'); }
-#projet_num3::before { background-image: url('../../../ressources/img/trellotrolle.png'); }
+#projet_num3::before { background-image: url('../../../ressources/img/orthoapparat.png'); }
+#projet_num2::before { background-image: url('../../../ressources/img/app-mobile-ied.png'); }
+#projet_num1::before { background-image: url('../../../ressources/img/extranet-ied.png'); }
 
 /* Numéro */
 .numero {
