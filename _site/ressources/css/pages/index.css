@@ -23,14 +23,20 @@
   border-radius: 20px;
 }
 
-/* Image en overlay */
+/* Image dynamique */
 .projet::before {
   content: "";
   position: absolute;
   inset: 0;
+
+  /* image injectée par Jekyll */
+  background-image: var(--bg-image);
+
   background-size: cover;
   background-position: center;
+
   opacity: 0;
+  transform: scale(1);
   transition: opacity 0.4s ease, transform 0.5s ease;
   z-index: 1;
 }
@@ -45,11 +51,6 @@
 .projet:hover .content {
   opacity: 0;
 }
-
-/* Images par projet */
-#projet_num3::before { background-image: url('../../../ressources/img/orthoapparat.png'); }
-#projet_num2::before { background-image: url('../../../ressources/img/app-mobile-ied.png'); }
-#projet_num1::before { background-image: url('../../../ressources/img/extranet-ied.png'); }
 
 /* Numéro */
 .numero {
@@ -91,13 +92,11 @@
   animation: scrollBounce 1.5s infinite;
 }
 
-
 .scroll-indicator a {
   display: block;
   width: 30px;
   height: 50px;
 }
-
 
 /* Animation */
 @keyframes scrollBounce {
@@ -113,5 +112,4 @@
     transform: rotate(45deg) translate(0, 0);
     opacity: 1;
   }
-}
-
+} 

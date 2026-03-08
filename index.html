@@ -47,24 +47,24 @@ no_center: true
   <div class="row g-4">
 
     {% for projet in site.data.projects.array limit: 3 %}
-    <div class="col-md-4">
-      <div class="projet position-relative" id="projet_num{{ forloop.index }}">
-        <div class="content p-4 d-flex flex-column justify-content-between h-100">
-          <div class="d-flex justify-content-between align-items-center">
-            <p class="numero">
-              {{ forloop.index | prepend: "0" }}
-            </p>
-            <p class="type badge bg-light text-dark">
-              {{ projet.type }}
-            </p>
+      <div class="col-md-4">
+        <div class="projet position-relative" id="projet_num{{ forloop.index }}" style="--bg-image: url('../../{{ projet.url }}')">
+          <div class="content p-4 d-flex flex-column justify-content-between h-100">
+            <div class="d-flex justify-content-between align-items-center">
+              <p class="numero">
+                {{ forloop.index | prepend: "0" }}    
+              </p>
+              <p class="type badge bg-light text-dark">
+                {{ projet.type }}
+              </p>
+            </div>
+
+            <h3>{{ projet.titre }}</h3>
+            <p>{{ projet.description[0] | truncate: 100, "..." }}</p>
+
           </div>
-
-          <h3>{{ projet.titre }}</h3>
-          <p>{{ projet.description[0] | truncate: 100, "..." }}</p>
-
         </div>
       </div>
-    </div>
     {% endfor %}
 
   </div>

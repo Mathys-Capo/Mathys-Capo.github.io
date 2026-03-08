@@ -11,13 +11,11 @@
         </p>
 
         <div id="imagesFooter" class="d-flex justify-content-center gap-4 mt-4">
-            <a href="https://www.linkedin.com/in/mathyscapo/" target="_blank" aria-label="LinkedIn">
-                <i class="bi bi-linkedin"></i>
-            </a>
-
-            <a href="https://gitlabinfo.iutmontp.univ-montp2.fr/capom" target="_blank" aria-label="GitHub">
-                <i class="bi bi-github"></i>
-            </a>
+            {% for contact in site.data.information.contacts %}
+                <a href="{{contact.url}}" target="_blank" aria-label="{{contact.name}}">
+                    <i class="{{contact.logoBootstrap}}"></i>
+                </a>
+            {% endfor %}
         </div>
 
         <p class="footer-copy mt-4">

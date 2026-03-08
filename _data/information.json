@@ -4,13 +4,21 @@
   "work": "Dévellopeur informatique", 
   "complement": "",
   "signification": "",
-  "gitlab":{
-    "url": "https://gitlabinfo.iutmontp.univ-montp2.fr/capom"
-  },
-  "linkedin":{
-    "url": "https://www.linkedin.com/in/mathyscapo/"
-  },
-  "mail":{
-    "url":"mathyscapo974@gmail.com"
-  }
+  "contacts":[
+    {
+      "name":"GitHub",
+      "logoBootstrap":"bi bi-envelope-fill",
+      "url":"https://github.com/Mathys-Capo"
+    },
+    {
+      "name":"Linkedin",
+      "logoBootstrap":"bi bi-linkedin",
+      "url":"https://www.linkedin.com/in/mathyscapo/"
+    },
+    {
+      "name":"Mail",
+      "logoBootstrap":"bi bi-github",
+      "url":"mathyscapo974@gmail.com"
+    }
+  ]
 }

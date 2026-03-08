@@ -21,42 +21,19 @@ waves: true
     </div>
 
         <div class="row justify-content-center g-4">
-          
-          <div class="col-12 col-md-4">
-            <div class="card h-100 shadow-sm">
-              <div class="card-body text-center">
-                <i class="bi bi-envelope-fill display-4 mb-3 text-primary"></i>
-                <h5>Email</h5>
-                <a href="mailto:{{site.data.information.mail.url}}" class="text-decoration-none">
-                  {{site.data.information.mail.url}}
-                </a>
+          {% for contact in site.data.information.contacts %}
+            <div class="col-12 col-md-4">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body text-center">
+                  <i class="{{contact.logoBootstrap}} display-4 mb-3 text-primary"></i>
+                  <h5>{{contact.name}}</h5>
+                  <a href="{{contact.url}}" class="text-decoration-none">
+                    {{contact.url}}
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-
-          <div class="col-12 col-md-4">
-            <div class="card h-100 shadow-sm">
-              <div class="card-body text-center">
-                <i class="bi bi-linkedin display-4 mb-3 text-info"></i>
-                <h5>LinkedIn</h5>
-                <a href="{{site.data.information.linkedin.url}}" target="_blank" class="text-decoration-none">
-                  {{site.data.information.linkedin.url}}
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-4">
-            <div class="card h-100 shadow-sm">
-              <div class="card-body text-center">
-                <i class="bi bi-github display-4 mb-3 text-dark"></i>
-                <h5>GitLab</h5>
-                <a href="{{site.data.information.gitlab.url}}" target="_blank" class="text-decoration-none">
-                  {{site.data.information.gitlab.url}}
-                </a>
-              </div>
-            </div>
-          </div>
+          {% endfor %}
 
         </div>
 
